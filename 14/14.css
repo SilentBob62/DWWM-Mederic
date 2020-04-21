@@ -15,4 +15,8 @@ body{
 .sousMenuGroupe{
     width: 10vw;
     border: black 1px solid;
+    display: none;
+}
+.menuTitre:hover{
+    cursor: pointer;
 }
