@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <form action="">
+        <div class="titre"><h2>Formulaire</h2></div>
+        <div class="bordure centre colone fond">
+            <div class="ligne marge">
+                <label for="nom">Nom : </label>
+                <input type="text" class="input" id="nom" required pattern="^([A-ZÀ-Ý -]){2,}$">
+                <span class="message"></span>
+            </div>
+            <div class="ligne marge">
+                <label for="prenom">Prenom : </label>
+                <input type="text" class="input" id="prenom" required pattern="^[A-ZÀ-Ý]{1}[a-zà-ý' -]*([ |-|'][A-ZÀ-Ý]{1}[a-zà-ý' -]*)?$">
+                <span class="message"></span>
+            </div>
+            <div class="ligne marge">
+                <label for="codePostal">Code postal : </label>
+                <input type="text" class="input" id="codePostal" required pattern="\d{5}">
+                <span class="message"></span>
+            </div>
+            <div class="ligne marge">
+                <label for="numeroTel">Numero de telephone : </label>
+                <input type="text" class="input" id="numeroTel" required pattern="^(0|\+33[-. ]?)[1-9]{1}([-. ]?[\d]{2}){4}$">
+                <span class="message"></span>
+            </div>
+            <div class="ligne marge">
+                <label for="adresseMail">Adresse mail : </label>
+                <input type="text" class="input" id="adresseMail" required pattern="^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$">
+                <span class="message"></span>
+            </div>
+            <div class="ligne marge">
+                <label for="mdp">Mot de passe : </label>
+                <input type="password" class="input" id="mdp" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[!@#\$%\^&\*+])[a-zA-Z\d!@#\$%\^&\*+]{8,}$">
+                <span class="message"></span>
+                <div id="oeil">&#128065;</div>
+            </div>
+            <div class="bouton marge">
+                <button id="submit" type="submit">valider</button>
+                <button type="submit">Annuler</button>
+            </div>
+        </div>
+    </form>
+    <script src="regex3.js"></script>
+</body>
+
+</html>

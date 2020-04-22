@@ -1,0 +1,103 @@
+body{
+}
+#carre {
+    position: absolute;
+    height: 2vw;
+    width: 10vw;
+    background-color: rgb(116, 116, 109);
+    left: 45vw;
+    top: 80vh;
+    border-radius: 15px;
+    box-shadow: #000000 1px 1px 1px;
+}
+#balle{
+    position: absolute;
+    height: 2vw;
+    width: 2vw;
+    background-color: rgb(73, 131, 65);
+    left: 49vw;
+    top: 78vh;
+    border-radius: 15px;
+    box-shadow: #000000 1px 1px 1px;
+}
+.mur{
+    position: absolute;
+    background-color: #000000;
+}
+.perdu{
+    position: absolute;
+    background-image: url(eau.jpg);
+    background-size: cover;
+}
+#obstacle1 {
+    height: 100vh;
+    width: 10vw;
+    left: 90vw;
+    top: 0vh;
+}
+#obstacle2 {
+    height: 100vh;
+    width: 10vw;
+    left: 0vw;
+    top: 0vh;
+}
+#obstacle3 {
+    height: 10vh;
+    width: 100vw;
+    left: 0vw;
+    top: 0vh;
+}
+#obstacle4 {
+    height: 10vh;
+    width: 80vw;
+    left: 10vw;
+    top: 90vh;
+}
+.brique{
+    position: absolute;
+    background-color: rgb(136, 41, 35);
+    height: 5vw;
+    width: 10vw;
+    border: #000000 solid 1px;
+    box-shadow: #000000 1px 1px 1px;
+}
+.niveau1{
+    top: 20vw;
+}
+.niveau2{
+    top: 25vw;
+}
+#obs1{
+    left: 20vw;
+}
+#obs2{ 
+    left: 30vw;
+}
+#obs3{  
+    left: 40vw;
+}
+#obs4{   
+    left: 50vw;
+}
+#obs5{   
+    left: 60vw;
+}
+#obs6{  
+    left: 70vw;
+}
+#obs7{
+    left: 25vw;
+}
+#obs8{
+    left: 35vw;
+}
+#obs9{
+    left: 45vw;
+}
+#obs10{
+    left: 55vw;
+}
+#obs11{
+    left: 65vw;
+}
+
