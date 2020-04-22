@@ -10,8 +10,6 @@ var setTm=0;
 var tmStart=0;
 var tmNow=0;
 var tmInterv=0;
-var tTime=[]; //tableau des temps intermédiaires (lap)
-var nTime=0; //compteur des temps intermédiaires
 
 function affTime(tm){ //affichage du compteur
    var vMin=tm.getMinutes();
@@ -28,7 +26,7 @@ function affTime(tm){ //affichage du compteur
    }
    document.getElementById("chronometre").innerHTML=vMin+":"+vSec+":"+vMil;
 }
-function fChrono(){
+function chrono(){
    tmNow=new Date();
    Interv=tmNow-tmStart;
    tmInterv=new Date(Interv);
@@ -43,19 +41,16 @@ function startTime(){
       Pause=tmNow-tmInterv;
       tmStart=new Date(Pause);
    }
-   setTm=setInterval(fChrono,10); //lancement du chrono tous les centièmes de secondes
+   setTm=setInterval(chrono,10); //lancement du chrono tous les centièmes de secondes
 }
 
 function pauseTime(){
    clearInterval(setTm);
-   tTime[nTime]=tmInterv;
 }
 
 function stopTime(){ //on efface tout
     pauseTime();
    tmStart=0;
    tmInterv=0;
-   tTime=[];
-   nTime=0;
    document.getElementById("chronometre").innerHTML="00:00:00";
 }
