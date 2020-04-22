@@ -12,19 +12,19 @@ var tmNow=0;
 var tmInterv=0;
 
 function affTime(tm){ //affichage du compteur
-   var vMin=tm.getMinutes();
-   var vSec=tm.getSeconds();
-   var vMil=Math.round((tm.getMilliseconds())/10); //arrondi au centième
-   if (vMin<10){
-      vMin="0"+vMin;
+   var vMin=tm.getMinutes();        //getMinutes existe deja
+   var vSec=tm.getSeconds();        //getSeconds existe deja
+   var vMil=Math.round((tm.getMilliseconds())/10); //arrondi au centième //getMilliseconds existe deja
+   if (vMin<10){       // si pas de dizaine
+      vMin="0"+vMin; //affiche le 0 dans les disaines
    }
    if (vSec<10){
-      vSec="0"+vSec;
+      vSec="0"+vSec; //affiche le 0 dans les disaines
    }
    if (vMil<10){
-      vMil="0"+vMil;
+      vMil="0"+vMil; //affiche le 0 dans les disaines
    }
-   document.getElementById("chronometre").innerHTML=vMin+":"+vSec+":"+vMil;
+   document.getElementById("chronometre").innerHTML=vMin+":"+vSec+":"+vMil; // affiche le temps
 }
 function chrono(){
    tmNow=new Date();
@@ -36,7 +36,7 @@ function startTime(){
     pauseTime();
    if (tmInterv==0) {
       tmStart=new Date();
-   } else { //si on repart après un clic sur Stop
+   } else { //si on repart après un clic sur pause
       tmNow=new Date();
       Pause=tmNow-tmInterv;
       tmStart=new Date(Pause);

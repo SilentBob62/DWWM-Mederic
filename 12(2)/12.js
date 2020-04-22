@@ -14,7 +14,6 @@ boutonVert.addEventListener("click", function(){changeCouleurFond("vert")});
 boutonBleu.addEventListener("click", function(){changeCouleurFond("bleu")});
 
 
-
 function changeCouleurFond(maCouleur){
    
     if (maCouleur=="rouge"){
