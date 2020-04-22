@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>structureSite</title>
+    <link rel="stylesheet" href="../CSS/regexFormulaire.css" />
+</head>
+
+<body>
+    <div id="header">
+        <h1>Formulaire d'inscription</h1>
+    </div>
+    <form action="" method="POST">
+        <div class="ligne">
+            <label for="nom">Nom : </label>
+            <input type="text" class="input" id="nom" name="nom" required autofocus
+                pattern="[A-Za-zâäàéèùêëîïôöçñ]{2,}">
+            <div class="interrogation" title="veuillez saisir votre nom"><img src="../Images/interrogation.png" /></div>
+            <div class="boutonVert"><img src="../Images/V.png" /></div>
+            <div class="boutonRouge"><img src="../Images/X.png" /></div>
+            <span class="message"></span>
+        </div>
+        <div class="ligne">
+            <label for="postal">Code postal : </label>
+            <input type="text" class="input" id="postal" name="postal" required pattern="^[0-9]{5,5}$">
+            <div class="interrogation" title="saisissez votre code postal"><img src="../Images/interrogation.png" />
+            </div>
+            <div class="boutonVert"><img src="../Images/V.png" /></div>
+            <div class="boutonRouge"><img src="../Images/X.png" /></div>
+            <span class="message"></span>
+        </div>
+        <div class="bouton ">
+            <button id="submit" type="submit ">Valider</button>
+            <button type="submit">Annuler</button>
+        </div>
+    </form>
+
+    <script src="../JS/regexFormulaire.js "></script>
+</body>
+
+</html>
