@@ -29,6 +29,8 @@ cacherSousMenu(p3);
 d1.addEventListener("click", function ()  {
     if (p1[0].style.display=="none"){
         montrerSousMenu(p1);
+        cacherSousMenu(p2);
+        cacherSousMenu(p3);
     }
     else{
         cacherSousMenu(p1);
@@ -37,7 +39,9 @@ d1.addEventListener("click", function ()  {
 /**pour le deuxieme menu */
 d2.addEventListener("click", function ()  {
     if (p2[0].style.display=="none"){
+        cacherSousMenu(p1);
         montrerSousMenu(p2);
+        cacherSousMenu(p3);
     }
     else{
         cacherSousMenu(p2);
@@ -46,6 +50,8 @@ d2.addEventListener("click", function ()  {
 /**pour le troisieme menu */
 d3.addEventListener("click", function ()  {
     if (p3[0].style.display=="none"){
+        cacherSousMenu(p1);
+        cacherSousMenu(p2);
         montrerSousMenu(p3);
     }
     else{
