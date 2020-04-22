@@ -1,0 +1,11 @@
+.contenu{
+    background-color: rgb(160, 154, 154);
+    padding: 2vw;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.marge{
+    margin: 0 5vw;
+}
