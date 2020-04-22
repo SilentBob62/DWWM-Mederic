@@ -16,37 +16,37 @@ for (i=0;i<p3.length;i++){
     p3[i].style.display="none";
 }
 
-d1.addEventListener("mouseover", () => {
+d1.addEventListener("mouseover", function ()  {
     for (i=0;i<p1.length;i++){
     p1[i].style.display="block";
 }
 });
 
-d1.addEventListener("mouseout", () => {
+d1.addEventListener("mouseout", function () {
 for (i=0;i<p1.length;i++){
     p1[i].style.display="none";
 }
 });
 
-d2.addEventListener("mouseover", () => {
+d2.addEventListener("mouseover", function () {
     for (i=0;i<p2.length;i++){
     p2[i].style.display="block";
 }
 });
 
-d2.addEventListener("mouseout", () => {
+d2.addEventListener("mouseout", function () {
 for (i=0;i<p2.length;i++){
     p2[i].style.display="none";
 }
 });
 
-d3.addEventListener("mouseover", () => {
+d3.addEventListener("mouseover", function () {
     for (i=0;i<p3.length;i++){
     p3[i].style.display="block";
 }
 });
 
-d3.addEventListener("mouseout", () => {
+d3.addEventListener("mouseout", function () {
 for (i=0;i<p3.length;i++){
     p3[i].style.display="none";
 }
