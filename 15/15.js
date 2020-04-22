@@ -11,7 +11,7 @@ var tmStart=0;
 var tmNow=0;
 var tmInterv=0;
 
-function affTime(tm){ //affichage du compteur
+function afficheTime(tm){ //affichage du compteur
    var vMin=tm.getMinutes();        //getMinutes existe deja
    var vSec=tm.getSeconds();        //getSeconds existe deja
    var vMil=Math.round((tm.getMilliseconds())/10); //arrondi au centième //getMilliseconds existe deja
@@ -30,7 +30,7 @@ function chrono(){
    tmNow=new Date();
    Interv=tmNow-tmStart;
    tmInterv=new Date(Interv);
-   affTime(tmInterv);
+   afficheTime(tmInterv);
 }
 function startTime(){
     pauseTime();
@@ -45,7 +45,7 @@ function startTime(){
 }
 
 function pauseTime(){
-   clearInterval(setTm);
+   clearInterval(setTm);    // interval passe a 0 le chrono n'avance plus
 }
 
 function stopTime(){ //on efface tout
