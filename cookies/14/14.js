@@ -1,53 +1,48 @@
+/**recuperer les elements */
+/*#########################################*/
 d1 = document.getElementById("d1");
 d2 = document.getElementById("d2");
 d3 = document.getElementById("d3");
-
 p1=document.getElementsByClassName("sousMenu1");
 p2=document.getElementsByClassName("sousMenu2");
 p3=document.getElementsByClassName("sousMenu3");
-
-for (i=0;i<p1.length;i++){
-    p1[i].style.display="none";
-}
-for (i=0;i<p2.length;i++){
-    p2[i].style.display="none";
-}
-for (i=0;i<p3.length;i++){
-    p3[i].style.display="none";
-}
-
+/**pour cacher les sousMenu */
+/*#########################################*/
+cacherSousMenu(p1);
+cacherSousMenu(p2);
+cacherSousMenu(p3);
+/**Pour les actions */
+/*#########################################*/
+/**pour le premier menu */
 d1.addEventListener("mouseover", function ()  {
-    for (i=0;i<p1.length;i++){
-    p1[i].style.display="block";
-}
+    montrerSousMenu(p1);
 });
-
 d1.addEventListener("mouseout", function () {
-for (i=0;i<p1.length;i++){
-    p1[i].style.display="none";
-}
+    cacherSousMenu(p1);
 });
-
+/**pour le deuxieme menu */
 d2.addEventListener("mouseover", function () {
-    for (i=0;i<p2.length;i++){
-    p2[i].style.display="block";
-}
+    montrerSousMenu(p2);
 });
-
 d2.addEventListener("mouseout", function () {
-for (i=0;i<p2.length;i++){
-    p2[i].style.display="none";
-}
+    cacherSousMenu(p2);
 });
-
+/**pour le troisieme menu */
 d3.addEventListener("mouseover", function () {
-    for (i=0;i<p3.length;i++){
-    p3[i].style.display="block";
-}
+    montrerSousMenu(p3);
 });
-
 d3.addEventListener("mouseout", function () {
-for (i=0;i<p3.length;i++){
-    p3[i].style.display="none";
-}
+    cacherSousMenu(p3);
 });
+/**fonctions */
+/*#########################################*/
+function cacherSousMenu(p){
+    for (i=0;i<p.length;i++){
+        p[i].style.display="none";
+    }
+}
+function montrerSousMenu(p){
+    for (i=0;i<p.length;i++){
+        p[i].style.display="block";
+    } 
+}
