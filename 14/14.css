@@ -4,12 +4,10 @@ body{
 }
 .menuDeroulant{
     display: flex;
+    height: 10vh;
 }
 .menu{
     width: 10vw;
-    height: 2vh;
-    background-color: blue;
-    border: black 2px solid;
     margin: 0 1vw;
 }
 .sousMenuGroupe{
@@ -19,4 +17,33 @@ body{
 }
 .menuTitre:hover{
     cursor: pointer;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.gris{
+    background-color: gray;
+}
+.taille{
+    height: 5vh;
+} 
+.bleu{
+    background-color: blue;
+}
+.blanc{
+    background-color: white;
+}
+.border{
+    border: black 2px solid;
+}
+.ecritureG{
+    font-size:1.5em;
+    color: white;
+    text-align: center;
+    padding-top: 4vh;
+}
+.ecritureM{
+    font-size:1.2em;
+    text-align: center;
 }
