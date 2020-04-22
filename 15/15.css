@@ -1,6 +1,8 @@
 .contenu{
     background-color: rgb(160, 154, 154);
     padding: 2vw;
+    display: flex;
+    flex-direction: column;
 }
 .center{
     display: flex;
@@ -8,4 +10,20 @@
 }
 .marge{
     margin: 0 5vw;
+}
+.border{
+    border: black 2px solid;
+}
+.blanc{
+    background-color:white;
+}
+.chrono{
+    margin-top: 5vh;
+    width: 10vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+.taille{
+    font-size: 2em;
 }
