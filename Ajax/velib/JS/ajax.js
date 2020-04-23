@@ -32,6 +32,7 @@ req.onreadystatechange = function (event) {
                 espace.setAttribute("class","espaceHorizon");
                 contenu.appendChild(espace);
                 //on met à jour le contenu
+                /*on prend les infos qu'on veux dans fields */
                 ville.innerHTML = enregs[i].fields.commune;
                 libelle.innerHTML = enregs[i].fields.nom;
                 etat.innerHTML = enregs[i].fields.etat;
@@ -47,6 +48,7 @@ req.onreadystatechange = function (event) {
 };
 function afficheDetail(e) {
     velib = (e.target).parentNode;
+    //apres click on suprime l'event pour emplecher de creer de nombreuses lignes identiques
     velib.removeEventListener("click", afficheDetail);
     detail = document.createElement("div");
     detail.setAttribute("class", "detail");
@@ -62,6 +64,7 @@ function afficheDetail(e) {
     adresse.innerHTML = enregs[velib.id].fields.adresse;
     dispo.innerHTML = "  nb de place dispo " + enregs[velib.id].fields.nbplacesdispo;
     nbMax.innerHTML= "  nb de velo dispo " + enregs[velib.id].fields.nbvelosdispo;
+    //ajouter detail avant l element qui suit celui du clic
     contenu.insertBefore(detail, velib.nextSibling);
 }
 //on envoi la requête
