@@ -29,7 +29,7 @@ req.onreadystatechange = function (event) {
                 ligne.appendChild(libelle);
                 /*############################ 4 eme div ######################################*/                
                 etat = document.createElement("div");
-                etat.setAttribute("class", "etat");
+                etat.setAttribute("class", "dispo");
                 ligne.appendChild(etat);
                 /*############################ 5 eme div ######################################*/
                 contenu.appendChild(ligne);

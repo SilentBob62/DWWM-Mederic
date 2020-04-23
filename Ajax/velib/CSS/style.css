@@ -69,7 +69,7 @@ img {
 #divSousTitre{
 	text-align: center;
 }
-.ville , .libelle ,.etat  {
+.ville , .libelle ,.dispo  {
 	flex: 1;
 }
 .pointable:hover  {
@@ -83,6 +83,8 @@ img {
 }
 .titreLigne{
 	font-weight: bold;
+	background-color: rgb(255, 101, 101);
+	border: black 1px solid;
 }
 .detail{
 	display: flex;
@@ -100,4 +102,10 @@ img {
 	border-radius: 12px;
 	box-shadow: black 2px 2px 2px;
 	padding: 1vw;
+}
+.tableau{
+	border: 2px solid black;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	margin-top: 2vw;
 }
