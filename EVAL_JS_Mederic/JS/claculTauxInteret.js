@@ -41,14 +41,15 @@ function verif(e){
 }
 function reInit(){
     for (i=0;i<inputs.length;i++){
-    inputs[i].value="" 
+    inputs[i].value="" ;
+    message.innerHTML="";
     }
 }
 function calcul(){
     capital=document.getElementById("emprunt").value;
     taux=document.getElementById("taux").value;
     nbMois=document.getElementById("duree").value;
-    Mensulalite = (capital * taux/12)/(1 - Math.pow(1 + taux/12, -nbMois))
+    Mensulalite = (capital * taux/12)/(1 - Math.pow(1 + taux/12, -nbMois));
     document.getElementById("mensualite").value=Mensulalite;
     cout=Mensulalite*nbMois;
     document.getElementById("cout").value=cout;
