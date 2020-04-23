@@ -37,18 +37,19 @@
                         </div>
                     </fieldset>
                 </div>
+                <div class="espaceH"></div>
                 <div class="bas largeur hauteur">
                     <fieldset>
                         <div class="info4 marge ligne">
                             <label for="">Mensualité</label>
-                            <input type="text" id="mensualite" required pattern="[0-9]{1,}">
+                            <input class="readonly" type="text" id="mensualite" readonly>
                             <div class="espace"></div>
                             <div class="unite">€</div>
                             <div class="message"></div>
                         </div>
                         <div class="info5 marge ligne">
                             <label for="">Coût Total</label>
-                            <input type="text" id="cout" required pattern="[0-9]{1,}">
+                            <input class="readonly" type="text" id="cout" readonly>
                             <div class="espace"></div>
                             <div class="unite">€</div>
                             <div class="message"></div>
@@ -56,8 +57,8 @@
                     </fieldset>
                 </div>
                 <div class="bouton">
-                    <button class="grandeMarge">calculer</button>
-                    <button class="grandeMarge">Nouveau Calcul</button>
+                    <button id="calcul" class="grandeMarge">calculer</button>
+                    <button id="zero" class="grandeMarge">Nouveau Calcul</button>
                 </div>
             </div>
         </form>

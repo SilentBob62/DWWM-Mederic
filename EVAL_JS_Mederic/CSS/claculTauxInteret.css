@@ -41,3 +41,9 @@ input{
     width: 10vw;
     margin-left: 2vw;
 }
+.readonly{
+    background-color:#EBEBE4;
+}
+.espaceH{
+    height: 10vw;
+}
