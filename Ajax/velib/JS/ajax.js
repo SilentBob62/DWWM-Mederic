@@ -12,21 +12,26 @@ req.onreadystatechange = function (event) {
             reponse = JSON.parse(this.responseText);
             console.log(this.responseText);
             console.log(reponse);
+            //met dans enregs tous ce qui a dans records
             enregs = reponse.records;
             for (let i = 0; i < enregs.length; i++) {
-                // on crée la ligne et les div internes
-                ligne = document.createElement("div");
-                ligne.setAttribute("class", "ligne pointable");
-                ligne.id = i;
+                /*############################ 1 ere div ######################################*/
+                ligne = document.createElement("div");// on crée la ligne et les div internes
+                ligne.setAttribute("class", "ligne pointable");//on met un attribut
+                ligne.id = i; // on met un id
+                /*############################ 2 eme div ######################################*/
                 ville = document.createElement("div");
-                ville.setAttribute("class", "ville");
-                ligne.appendChild(ville);
+                ville.setAttribute("class", "ville");            
+                ligne.appendChild(ville); // met ville a la fin de la div ligne
+                /*############################ 3 eme div ######################################*/   
                 libelle = document.createElement("div");
                 libelle.setAttribute("class", "libelle");
                 ligne.appendChild(libelle);
+                /*############################ 4 eme div ######################################*/                
                 etat = document.createElement("div");
                 etat.setAttribute("class", "etat");
                 ligne.appendChild(etat);
+                /*############################ 5 eme div ######################################*/
                 contenu.appendChild(ligne);
                 espace = document.createElement("div");
                 espace.setAttribute("class","espaceHorizon");
@@ -47,20 +52,24 @@ req.onreadystatechange = function (event) {
     }
 };
 function afficheDetail(e) {
-    velib = (e.target).parentNode;
-    //apres click on suprime l'event pour emplecher de creer de nombreuses lignes identiques
-    velib.removeEventListener("click", afficheDetail);
+    velib = (e.target).parentNode; // ou que l'on clic on recupere le parent (ligne)
+    velib.removeEventListener("click", afficheDetail);//apres clic on suprime l'event pour emplecher de creer des lignes identiques
+    /*############################ 1 ere div ######################################*/
     detail = document.createElement("div");
     detail.setAttribute("class", "detail");
+    /*############################ 2 eme div ######################################*/
     adresse = document.createElement("div");
     adresse.setAttribute("class", "adresse");
     detail.appendChild(adresse);
+    /*############################ 3 eme div ######################################*/
     dispo = document.createElement("div");
-    dispo.setAttribute("class", "dispo");
+    dispo.setAttribute("class", "nbPlace");
     detail.appendChild(dispo);
+    /*############################ 4 eme div ######################################*/
     nbMax = document.createElement("div");
-    nbMax.setAttribute("class", "nbMax");
+    nbMax.setAttribute("class", "nbVelo");
     detail.appendChild(nbMax);
+    /**ce que l'on ajoute */
     adresse.innerHTML = enregs[velib.id].fields.adresse;
     dispo.innerHTML = "  nb de place dispo " + enregs[velib.id].fields.nbplacesdispo;
     nbMax.innerHTML= "  nb de velo dispo " + enregs[velib.id].fields.nbvelosdispo;
