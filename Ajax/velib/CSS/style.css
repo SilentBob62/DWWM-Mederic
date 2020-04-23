@@ -12,7 +12,7 @@ img {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: wheat;
+	background-color: rgb(207, 204, 204);
 	padding-left: 2%;
 	padding-right: 2%;
 }
@@ -21,7 +21,6 @@ img {
 	display: flex;
 	flex-direction: column;
 	width: 80%;
-	background-color: wheat;
 	justify-content: center;
 }
 .ligne{
@@ -36,11 +35,12 @@ img {
 	flex: 0.5;
 }
 #entete {
-	background-color: rgb(224, 82, 91);
+	background-color: rgba(224, 82, 91, 0.5);
 	color: white;
 	display: flex;
 	width: 100%;
 	flex-direction: column;
+	border-radius: 12px;
 }
 
 #titre {
