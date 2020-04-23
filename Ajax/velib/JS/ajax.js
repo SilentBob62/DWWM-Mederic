@@ -16,7 +16,7 @@ req.onreadystatechange = function (event) {
             for (let i = 0; i < enregs.length; i++) {
                 // on crée la ligne et les div internes
                 ligne = document.createElement("div");
-                ligne.setAttribute("class", "ligne");
+                ligne.setAttribute("class", "ligne pointable");
                 ligne.id = i;
                 ville = document.createElement("div");
                 ville.setAttribute("class", "ville");

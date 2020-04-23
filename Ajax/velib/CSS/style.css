@@ -67,11 +67,11 @@ img {
 }
 .ville , .libelle ,.etat  {
 	flex: 1;
-	cursor: pointer;
 }
-.ligne:hover  {
+.pointable:hover  {
 	background-color: blue;
 	color: white;
+	cursor: pointer;
 }
 .dispo, .adresse, .nbMax{
 	flex: 1;
