@@ -50,7 +50,7 @@ function reInit(){
 function calcul(){
     capital=document.getElementById("emprunt").value;
     taux=document.getElementById("taux").value;
-    nbMois=document.getElementById("duree").value;
+    nbMois=document.getElementById("duree").value*12;
     Mensulalite = (capital * taux/12)/(1 - Math.pow(1 + taux/12, -nbMois));
     document.getElementById("mensualite").value=Mensulalite;
     cout=Mensulalite*nbMois;
