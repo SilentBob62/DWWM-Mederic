@@ -40,9 +40,11 @@ function verif(e){
     }
 }
 function reInit(){
+    messages=document.getElementsByClassName("message");
     for (i=0;i<inputs.length;i++){
     inputs[i].value="" ;
-    message.innerHTML="";
+    inputs[i].style.border="";
+    messages[i].innerHTML="";
     }
 }
 function calcul(){
