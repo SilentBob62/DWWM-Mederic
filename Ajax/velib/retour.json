@@ -1,0 +1,2047 @@
+{
+    "nhits": 249,
+    "parameters": {
+        "dataset": "vlille-realtime",
+        "timezone": "UTC",
+        "rows": 20,
+        "format": "json",
+        "facet": [
+            "libelle",
+            "nom",
+            "commune",
+            "etat",
+            "type",
+            "etatconnexion"
+        ]
+    },
+    "records": [
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "fff3776bbd85032f7c57c71570fdf09e805f7370",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 5,
+                "nbplacesdispo": 7,
+                "commune": "HELLEMMES",
+                "type": "SANS TPE",
+                "libelle": 111,
+                "datemiseajour": "2020-04-23T11:29:07+00:00",
+                "localisation": [
+                    50.62486,
+                    3.116677
+                ],
+                "nom": "HELLEMMES CIMETIERE",
+                "adresse": "318, RUE ROGER SALENGRO",
+                "geo": [
+                    50.62486,
+                    3.116677
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.116677,
+                    50.62486
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "f71c6e9781b180d5fa36b18a15a2b201b868f817",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 13,
+                "nbplacesdispo": 11,
+                "commune": "VILLENEUVE D'ASCQ",
+                "type": "AVEC TPE",
+                "libelle": 144,
+                "datemiseajour": "2020-04-23T11:29:07+00:00",
+                "localisation": [
+                    50.6258,
+                    3.14862
+                ],
+                "nom": "ANNAPPES REPUBLIQUE",
+                "adresse": "FACE AU 1 BIS RUE DE LA STATION",
+                "geo": [
+                    50.6258,
+                    3.14862
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.14862,
+                    50.6258
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "e0676f038aea52b64945ef7be8b52c74ae89ba6f",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 18,
+                "nbplacesdispo": 18,
+                "commune": "LILLE",
+                "type": "AVEC TPE",
+                "libelle": 27,
+                "datemiseajour": "2020-04-23T11:29:06+00:00",
+                "localisation": [
+                    50.635014,
+                    3.064802
+                ],
+                "nom": "TANNEURS",
+                "adresse": "2 - 10 RUE DES TANNEURS",
+                "geo": [
+                    50.635014,
+                    3.064802
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.064802,
+                    50.635014
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "92de32733cd56ffd713707eab9657895c9c0a955",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 6,
+                "nbplacesdispo": 10,
+                "commune": "MARCQ EN BAROEUL",
+                "type": "SANS TPE",
+                "libelle": 122,
+                "datemiseajour": "2020-04-23T11:29:07+00:00",
+                "localisation": [
+                    50.66026,
+                    3.087568
+                ],
+                "nom": "PISCINE DE MARCQ",
+                "adresse": "298-300 AVENUE DE LATTRE DE TASSIGNY",
+                "geo": [
+                    50.66026,
+                    3.087568
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.087568,
+                    50.66026
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "b28430c484e21d2d35cb70109272e480fe35c063",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 12,
+                "nbplacesdispo": 8,
+                "commune": "MONS EN BAROEUL",
+                "type": "AVEC TPE",
+                "libelle": 125,
+                "datemiseajour": "2020-04-23T11:29:07+00:00",
+                "localisation": [
+                    50.643883,
+                    3.118579
+                ],
+                "nom": "FORT DE MONS",
+                "adresse": "12, RUE DE NORMANDIE",
+                "geo": [
+                    50.643883,
+                    3.118579
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.118579,
+                    50.643883
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "81cdd1ead280be51a8e0868793eb13118621056f",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 13,
+                "nbplacesdispo": 7,
+                "commune": "LILLE",
+                "type": "AVEC TPE",
+                "libelle": 29,
+                "datemiseajour": "2020-04-23T11:29:06+00:00",
+                "localisation": [
+                    50.647236,
+                    3.059376
+                ],
+                "nom": "ST SEBASTIEN",
+                "adresse": "40 RUE SAINT SEBASTIEN",
+                "geo": [
+                    50.647236,
+                    3.059376
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.059376,
+                    50.647236
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "3d361c51c2d086677a65c39811d036a20792f981",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 8,
+                "nbplacesdispo": 8,
+                "commune": "TOURCOING",
+                "type": "AVEC TPE",
+                "libelle": 257,
+                "datemiseajour": "2020-04-23T11:29:08+00:00",
+                "localisation": [
+                    50.714733,
+                    3.157181
+                ],
+                "nom": "CHARLES WATTINNE",
+                "adresse": "PONT HYDRAULIQUE",
+                "geo": [
+                    50.714733,
+                    3.157181
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.157181,
+                    50.714733
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "6f55bf2493bbf51f0490ee50987490d05135c4e6",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 12,
+                "nbplacesdispo": 6,
+                "commune": "LILLE",
+                "type": "AVEC TPE",
+                "libelle": 66,
+                "datemiseajour": "2020-04-23T11:29:07+00:00",
+                "localisation": [
+                    50.63237,
+                    3.066273
+                ],
+                "nom": "DELESALLE MEDIATHEQUE",
+                "adresse": "35 RUE EDOUARD DELESALLE",
+                "geo": [
+                    50.63237,
+                    3.066273
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.066273,
+                    50.63237
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "c8117f6ec1ca79c6731c9c35b9acc1a81e19bf0a",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 15,
+                "nbplacesdispo": 15,
+                "commune": "VILLENEUVE D'ASCQ",
+                "type": "AVEC TPE",
+                "libelle": 137,
+                "datemiseajour": "2020-04-23T11:29:07+00:00",
+                "localisation": [
+                    50.615868,
+                    3.126089
+                ],
+                "nom": "HERON PARC",
+                "adresse": "40, RUE DE LA VAGUE",
+                "geo": [
+                    50.615868,
+                    3.126089
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.126089,
+                    50.615868
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "9e35a95f26c1ce7d9e3e7d0e3aeb24f0e4e7aefe",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 5,
+                "nbplacesdispo": 12,
+                "commune": "ROUBAIX",
+                "type": "AVEC TPE",
+                "libelle": 219,
+                "datemiseajour": "2020-04-23T11:29:08+00:00",
+                "localisation": [
+                    50.695477,
+                    3.164222
+                ],
+                "nom": "GARE JEAN LEBAS",
+                "adresse": "PLACE DE LA GARE",
+                "geo": [
+                    50.695477,
+                    3.164222
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.164222,
+                    50.695477
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "d951c5801d573f20889b8b8ebeebb62f68a764be",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 7,
+                "nbplacesdispo": 11,
+                "commune": "LA MADELEINE",
+                "type": "AVEC TPE",
+                "libelle": 115,
+                "datemiseajour": "2020-04-23T11:29:07+00:00",
+                "localisation": [
+                    50.651497,
+                    3.072316
+                ],
+                "nom": "DE GAULLE",
+                "adresse": "85, RUE DU G\u00c9N\u00c9RAL DE GAULLE",
+                "geo": [
+                    50.651497,
+                    3.072316
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.072316,
+                    50.651497
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "e5decefb7f404a94fafd43a439835a1c6555f661",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 0,
+                "nbplacesdispo": 0,
+                "commune": "VILLENEUVE D'ASCQ",
+                "type": "AVEC TPE",
+                "libelle": 129,
+                "datemiseajour": "2019-10-21T07:46:05+00:00",
+                "localisation": [
+                    50.63608,
+                    3.130853
+                ],
+                "nom": "FLERS CHATEAU",
+                "adresse": "RUE DE LA CHEVALERIE",
+                "geo": [
+                    50.63608,
+                    3.130853
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.130853,
+                    50.63608
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "e76138729b09a25cec4020ec405ca46807ef3d1d",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 0,
+                "nbplacesdispo": 12,
+                "commune": "LILLE",
+                "type": "SANS TPE",
+                "libelle": 172,
+                "datemiseajour": "2020-04-23T11:29:07+00:00",
+                "localisation": [
+                    50.612635,
+                    3.059261
+                ],
+                "nom": "PLACE DE LA GARONNE",
+                "adresse": "Rue de la Seine",
+                "geo": [
+                    50.612635,
+                    3.059261
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.059261,
+                    50.612635
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "ef84a05a565deb315228b079839095182c045f1f",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 9,
+                "nbplacesdispo": 23,
+                "commune": "LILLE",
+                "type": "AVEC TPE",
+                "libelle": 8,
+                "datemiseajour": "2020-04-23T11:29:06+00:00",
+                "localisation": [
+                    50.632366,
+                    3.062313
+                ],
+                "nom": "PLACE RICHEBE",
+                "adresse": "3 PLACE RICHEBE",
+                "geo": [
+                    50.632366,
+                    3.062313
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.062313,
+                    50.632366
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "807e07d3f1e4fce53a1f1d7a458345896dc814ce",
+            "fields": {
+                "etat": "HORS SERVICE",
+                "etatconnexion": "DISCONNECTED",
+                "nbvelosdispo": 0,
+                "nbplacesdispo": 12,
+                "commune": "ROUBAIX",
+                "type": "AVEC TPE",
+                "libelle": 222,
+                "datemiseajour": "2019-07-10T15:47:05+00:00",
+                "localisation": [
+                    50.6941,
+                    3.172165
+                ],
+                "nom": "LES GOBELINS",
+                "adresse": "32, RUE DE LA COMMUNAUT\u00c9 URBAINE",
+                "geo": [
+                    50.6941,
+                    3.172165
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.172165,
+                    50.6941
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "301edb33dc7276e7346e6cab110788590396bda1",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 8,
+                "nbplacesdispo": 17,
+                "commune": "LILLE",
+                "type": "AVEC TPE",
+                "libelle": 12,
+                "datemiseajour": "2020-04-23T11:29:06+00:00",
+                "localisation": [
+                    50.637486,
+                    3.065902
+                ],
+                "nom": "OPERA",
+                "adresse": "FACE AU 8 RUE ANATOLE FRANCE",
+                "geo": [
+                    50.637486,
+                    3.065902
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.065902,
+                    50.637486
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "18b269166d31afbff1eaa73ca676067639cdbec7",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 13,
+                "nbplacesdispo": 11,
+                "commune": "LILLE",
+                "type": "AVEC TPE",
+                "libelle": 19,
+                "datemiseajour": "2020-04-23T11:29:06+00:00",
+                "localisation": [
+                    50.64031,
+                    3.05774
+                ],
+                "nom": "RUE ROYALE",
+                "adresse": "40 RUE ROYALE",
+                "geo": [
+                    50.64031,
+                    3.05774
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.05774,
+                    50.64031
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "985b9680072408444b6e05524e66ad6c833206fe",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 13,
+                "nbplacesdispo": 17,
+                "commune": "LILLE",
+                "type": "AVEC TPE",
+                "libelle": 20,
+                "datemiseajour": "2020-04-23T11:29:06+00:00",
+                "localisation": [
+                    50.640385,
+                    3.062053
+                ],
+                "nom": "N.D. DE LA TREILLE",
+                "adresse": "PLACE GILLSON",
+                "geo": [
+                    50.640385,
+                    3.062053
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.062053,
+                    50.640385
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "3a4d235ba0c3d7a46784090519e9a80384cba3ca",
+            "fields": {
+                "etat": "HORS SERVICE",
+                "etatconnexion": "DISCONNECTED",
+                "nbvelosdispo": 0,
+                "nbplacesdispo": 0,
+                "commune": "LILLE HELLEMMES",
+                "type": "AVEC TPE",
+                "libelle": 87,
+                "datemiseajour": "2019-07-10T15:39:06+00:00",
+                "localisation": [
+                    50.632393,
+                    3.110669
+                ],
+                "nom": "JULES GUESDE",
+                "adresse": "RUE ST ELOI",
+                "geo": [
+                    50.632393,
+                    3.110669
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.110669,
+                    50.632393
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        },
+        {
+            "datasetid": "vlille-realtime",
+            "recordid": "3f443706e549c832710c84005d00723d5a476544",
+            "fields": {
+                "etat": "EN SERVICE",
+                "etatconnexion": "CONNECTED",
+                "nbvelosdispo": 13,
+                "nbplacesdispo": 11,
+                "commune": "LILLE",
+                "type": "AVEC TPE",
+                "libelle": 43,
+                "datemiseajour": "2020-04-23T11:29:06+00:00",
+                "localisation": [
+                    50.629044,
+                    3.058288
+                ],
+                "nom": "THEATRE SEBASTOPOL",
+                "adresse": "3 PLACE SEBASTOPOL",
+                "geo": [
+                    50.629044,
+                    3.058288
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.058288,
+                    50.629044
+                ]
+            },
+            "record_timestamp": "2020-04-23T11:30:35.757000+00:00"
+        }
+    ],
+    "facet_groups": [
+        {
+            "facets": [
+                {
+                    "count": 219,
+                    "path": "EN SERVICE",
+                    "state": "displayed",
+                    "name": "EN SERVICE"
+                },
+                {
+                    "count": 25,
+                    "path": "HORS SERVICE",
+                    "state": "displayed",
+                    "name": "HORS SERVICE"
+                },
+                {
+                    "count": 3,
+                    "path": "OUT_OF_SERVICE",
+                    "state": "displayed",
+                    "name": "OUT_OF_SERVICE"
+                },
+                {
+                    "count": 2,
+                    "path": "EN MAINTENANCE",
+                    "state": "displayed",
+                    "name": "EN MAINTENANCE"
+                }
+            ],
+            "name": "etat"
+        },
+        {
+            "facets": [
+                {
+                    "count": 2,
+                    "path": "BLANCHEMAILLE",
+                    "state": "displayed",
+                    "name": "BLANCHEMAILLE"
+                },
+                {
+                    "count": 1,
+                    "path": "ALFRED MONGY",
+                    "state": "displayed",
+                    "name": "ALFRED MONGY"
+                },
+                {
+                    "count": 1,
+                    "path": "ALSACE",
+                    "state": "displayed",
+                    "name": "ALSACE"
+                },
+                {
+                    "count": 1,
+                    "path": "ANGELLIER",
+                    "state": "displayed",
+                    "name": "ANGELLIER"
+                },
+                {
+                    "count": 1,
+                    "path": "ANNAPPES REPUBLIQUE",
+                    "state": "displayed",
+                    "name": "ANNAPPES REPUBLIQUE"
+                },
+                {
+                    "count": 1,
+                    "path": "ARTOIS",
+                    "state": "displayed",
+                    "name": "ARTOIS"
+                },
+                {
+                    "count": 1,
+                    "path": "AUBERGE DE JEUNESSE",
+                    "state": "displayed",
+                    "name": "AUBERGE DE JEUNESSE"
+                },
+                {
+                    "count": 1,
+                    "path": "AVENUE DE MORMAL",
+                    "state": "displayed",
+                    "name": "AVENUE DE MORMAL"
+                },
+                {
+                    "count": 1,
+                    "path": "AVENUE MILLET",
+                    "state": "displayed",
+                    "name": "AVENUE MILLET"
+                },
+                {
+                    "count": 1,
+                    "path": "BAILLY",
+                    "state": "displayed",
+                    "name": "BAILLY"
+                },
+                {
+                    "count": 1,
+                    "path": "BARTHELEMY DELESPAUL",
+                    "state": "displayed",
+                    "name": "BARTHELEMY DELESPAUL"
+                },
+                {
+                    "count": 1,
+                    "path": "BD VICTOR HUGO",
+                    "state": "displayed",
+                    "name": "BD VICTOR HUGO"
+                },
+                {
+                    "count": 1,
+                    "path": "BECQUART",
+                    "state": "displayed",
+                    "name": "BECQUART"
+                },
+                {
+                    "count": 1,
+                    "path": "BELFORT",
+                    "state": "displayed",
+                    "name": "BELFORT"
+                },
+                {
+                    "count": 1,
+                    "path": "BOIS BLANCS",
+                    "state": "displayed",
+                    "name": "BOIS BLANCS"
+                },
+                {
+                    "count": 1,
+                    "path": "BOIS HABITE",
+                    "state": "displayed",
+                    "name": "BOIS HABITE"
+                },
+                {
+                    "count": 1,
+                    "path": "BOTANIQUE",
+                    "state": "displayed",
+                    "name": "BOTANIQUE"
+                },
+                {
+                    "count": 1,
+                    "path": "BOULEVARD DE METZ",
+                    "state": "displayed",
+                    "name": "BOULEVARD DE METZ"
+                },
+                {
+                    "count": 1,
+                    "path": "BOULEVARD DE VALMY",
+                    "state": "displayed",
+                    "name": "BOULEVARD DE VALMY"
+                },
+                {
+                    "count": 1,
+                    "path": "BOULEVARD LOUIS XIV",
+                    "state": "displayed",
+                    "name": "BOULEVARD LOUIS XIV"
+                },
+                {
+                    "count": 1,
+                    "path": "BRULE MAISON",
+                    "state": "displayed",
+                    "name": "BRULE MAISON"
+                },
+                {
+                    "count": 1,
+                    "path": "BUISSON",
+                    "state": "displayed",
+                    "name": "BUISSON"
+                },
+                {
+                    "count": 1,
+                    "path": "BVRD ARMENTIERES",
+                    "state": "displayed",
+                    "name": "BVRD ARMENTIERES"
+                },
+                {
+                    "count": 1,
+                    "path": "BVRD DE L EGALITE",
+                    "state": "displayed",
+                    "name": "BVRD DE L EGALITE"
+                },
+                {
+                    "count": 1,
+                    "path": "CAMPUS ST RAPHAEL",
+                    "state": "displayed",
+                    "name": "CAMPUS ST RAPHAEL"
+                },
+                {
+                    "count": 1,
+                    "path": "CANON D'OR",
+                    "state": "displayed",
+                    "name": "CANON D'OR"
+                },
+                {
+                    "count": 1,
+                    "path": "CANTELEU",
+                    "state": "displayed",
+                    "name": "CANTELEU"
+                },
+                {
+                    "count": 1,
+                    "path": "CARLIERS",
+                    "state": "displayed",
+                    "name": "CARLIERS"
+                },
+                {
+                    "count": 1,
+                    "path": "CAVELL",
+                    "state": "displayed",
+                    "name": "CAVELL"
+                },
+                {
+                    "count": 1,
+                    "path": "CENTRE COMMERCIAL V2",
+                    "state": "displayed",
+                    "name": "CENTRE COMMERCIAL V2"
+                },
+                {
+                    "count": 1,
+                    "path": "CENTRE NAUTIQUE",
+                    "state": "displayed",
+                    "name": "CENTRE NAUTIQUE"
+                },
+                {
+                    "count": 1,
+                    "path": "CH. DES MARGUERITOIS",
+                    "state": "displayed",
+                    "name": "CH. DES MARGUERITOIS"
+                },
+                {
+                    "count": 1,
+                    "path": "CHAMP DE MARS",
+                    "state": "displayed",
+                    "name": "CHAMP DE MARS"
+                },
+                {
+                    "count": 1,
+                    "path": "CHANZY",
+                    "state": "displayed",
+                    "name": "CHANZY"
+                },
+                {
+                    "count": 1,
+                    "path": "CHAPTAL",
+                    "state": "displayed",
+                    "name": "CHAPTAL"
+                },
+                {
+                    "count": 1,
+                    "path": "CHARLES DE GAULLE",
+                    "state": "displayed",
+                    "name": "CHARLES DE GAULLE"
+                },
+                {
+                    "count": 1,
+                    "path": "CHARLES WATTINNE",
+                    "state": "displayed",
+                    "name": "CHARLES WATTINNE"
+                },
+                {
+                    "count": 1,
+                    "path": "CHASSEURS DE DRIANT",
+                    "state": "displayed",
+                    "name": "CHASSEURS DE DRIANT"
+                },
+                {
+                    "count": 1,
+                    "path": "CHAUFFERIE",
+                    "state": "displayed",
+                    "name": "CHAUFFERIE"
+                },
+                {
+                    "count": 1,
+                    "path": "CHEMIN ROUGE",
+                    "state": "displayed",
+                    "name": "CHEMIN ROUGE"
+                },
+                {
+                    "count": 1,
+                    "path": "CHU - CENTRE OSCART LAMBRET",
+                    "state": "displayed",
+                    "name": "CHU - CENTRE OSCART LAMBRET"
+                },
+                {
+                    "count": 1,
+                    "path": "CHU - EURASANT\u00c9",
+                    "state": "displayed",
+                    "name": "CHU - EURASANT\u00c9"
+                },
+                {
+                    "count": 1,
+                    "path": "CIMETIERE DU SUD",
+                    "state": "displayed",
+                    "name": "CIMETIERE DU SUD"
+                },
+                {
+                    "count": 1,
+                    "path": "CITE ADMINISTRATIVE",
+                    "state": "displayed",
+                    "name": "CITE ADMINISTRATIVE"
+                },
+                {
+                    "count": 1,
+                    "path": "CLEMENCEAU HIPPODROME",
+                    "state": "displayed",
+                    "name": "CLEMENCEAU HIPPODROME"
+                },
+                {
+                    "count": 1,
+                    "path": "COLBERT",
+                    "state": "displayed",
+                    "name": "COLBERT"
+                },
+                {
+                    "count": 1,
+                    "path": "COLLEGE LAVOISIER",
+                    "state": "displayed",
+                    "name": "COLLEGE LAVOISIER"
+                },
+                {
+                    "count": 1,
+                    "path": "CONCORDE",
+                    "state": "displayed",
+                    "name": "CONCORDE"
+                },
+                {
+                    "count": 1,
+                    "path": "CONDITION PUBLIQUE",
+                    "state": "displayed",
+                    "name": "CONDITION PUBLIQUE"
+                },
+                {
+                    "count": 1,
+                    "path": "CORMONTAIGNE",
+                    "state": "displayed",
+                    "name": "CORMONTAIGNE"
+                },
+                {
+                    "count": 1,
+                    "path": "CROIX CENTRE",
+                    "state": "displayed",
+                    "name": "CROIX CENTRE"
+                },
+                {
+                    "count": 1,
+                    "path": "DANIELLE LESAFFRE",
+                    "state": "displayed",
+                    "name": "DANIELLE LESAFFRE"
+                },
+                {
+                    "count": 1,
+                    "path": "DE FOURMIES",
+                    "state": "displayed",
+                    "name": "DE FOURMIES"
+                },
+                {
+                    "count": 1,
+                    "path": "DE GAULLE",
+                    "state": "displayed",
+                    "name": "DE GAULLE"
+                },
+                {
+                    "count": 1,
+                    "path": "DE LA VIGNE",
+                    "state": "displayed",
+                    "name": "DE LA VIGNE"
+                },
+                {
+                    "count": 1,
+                    "path": "DELECAUT",
+                    "state": "displayed",
+                    "name": "DELECAUT"
+                },
+                {
+                    "count": 1,
+                    "path": "DELESALLE MEDIATHEQUE",
+                    "state": "displayed",
+                    "name": "DELESALLE MEDIATHEQUE"
+                },
+                {
+                    "count": 1,
+                    "path": "EDHEC",
+                    "state": "displayed",
+                    "name": "EDHEC"
+                },
+                {
+                    "count": 1,
+                    "path": "EPEULE MONTESQUIEU",
+                    "state": "displayed",
+                    "name": "EPEULE MONTESQUIEU"
+                },
+                {
+                    "count": 1,
+                    "path": "ESPLANADE",
+                    "state": "displayed",
+                    "name": "ESPLANADE"
+                },
+                {
+                    "count": 1,
+                    "path": "EUGENE JACQUET",
+                    "state": "displayed",
+                    "name": "EUGENE JACQUET"
+                },
+                {
+                    "count": 1,
+                    "path": "EURALILLE",
+                    "state": "displayed",
+                    "name": "EURALILLE"
+                },
+                {
+                    "count": 1,
+                    "path": "EURATECHNOLOGIES",
+                    "state": "displayed",
+                    "name": "EURATECHNOLOGIES"
+                },
+                {
+                    "count": 1,
+                    "path": "EUROTELEPORT",
+                    "state": "displayed",
+                    "name": "EUROTELEPORT"
+                },
+                {
+                    "count": 1,
+                    "path": "F ROOSEVELT",
+                    "state": "displayed",
+                    "name": "F ROOSEVELT"
+                },
+                {
+                    "count": 1,
+                    "path": "FAUBOURG D'ARRAS",
+                    "state": "displayed",
+                    "name": "FAUBOURG D'ARRAS"
+                },
+                {
+                    "count": 1,
+                    "path": "FAUBOURG DE ROUBAIX",
+                    "state": "displayed",
+                    "name": "FAUBOURG DE ROUBAIX"
+                },
+                {
+                    "count": 1,
+                    "path": "FERME D'EN HAUT",
+                    "state": "displayed",
+                    "name": "FERME D'EN HAUT"
+                },
+                {
+                    "count": 1,
+                    "path": "FIVES",
+                    "state": "displayed",
+                    "name": "FIVES"
+                },
+                {
+                    "count": 1,
+                    "path": "FLANDRES EURALILLE",
+                    "state": "displayed",
+                    "name": "FLANDRES EURALILLE"
+                },
+                {
+                    "count": 1,
+                    "path": "FLERS CHATEAU",
+                    "state": "displayed",
+                    "name": "FLERS CHATEAU"
+                },
+                {
+                    "count": 1,
+                    "path": "FLERS MAIRIE",
+                    "state": "displayed",
+                    "name": "FLERS MAIRIE"
+                },
+                {
+                    "count": 1,
+                    "path": "FLERS MASQUELIER",
+                    "state": "displayed",
+                    "name": "FLERS MASQUELIER"
+                },
+                {
+                    "count": 1,
+                    "path": "FORT DE MONS",
+                    "state": "displayed",
+                    "name": "FORT DE MONS"
+                },
+                {
+                    "count": 1,
+                    "path": "FOSSE AUX CHENES",
+                    "state": "displayed",
+                    "name": "FOSSE AUX CHENES"
+                },
+                {
+                    "count": 1,
+                    "path": "FRATERNITE",
+                    "state": "displayed",
+                    "name": "FRATERNITE"
+                },
+                {
+                    "count": 1,
+                    "path": "FULTON",
+                    "state": "displayed",
+                    "name": "FULTON"
+                },
+                {
+                    "count": 1,
+                    "path": "GAMBETTA UTRECHT",
+                    "state": "displayed",
+                    "name": "GAMBETTA UTRECHT"
+                },
+                {
+                    "count": 1,
+                    "path": "GANTOIS",
+                    "state": "displayed",
+                    "name": "GANTOIS"
+                },
+                {
+                    "count": 1,
+                    "path": "GARE JEAN LEBAS",
+                    "state": "displayed",
+                    "name": "GARE JEAN LEBAS"
+                },
+                {
+                    "count": 1,
+                    "path": "GARE LILLE EUROPE",
+                    "state": "displayed",
+                    "name": "GARE LILLE EUROPE"
+                },
+                {
+                    "count": 1,
+                    "path": "GARE LILLE FLANDRES",
+                    "state": "displayed",
+                    "name": "GARE LILLE FLANDRES"
+                },
+                {
+                    "count": 1,
+                    "path": "GENERAL DE GAULLE",
+                    "state": "displayed",
+                    "name": "GENERAL DE GAULLE"
+                },
+                {
+                    "count": 1,
+                    "path": "GUINGUETTE",
+                    "state": "displayed",
+                    "name": "GUINGUETTE"
+                },
+                {
+                    "count": 1,
+                    "path": "GUSTAVE DELORY",
+                    "state": "displayed",
+                    "name": "GUSTAVE DELORY"
+                },
+                {
+                    "count": 1,
+                    "path": "HALLE AUX SUCRES",
+                    "state": "displayed",
+                    "name": "HALLE AUX SUCRES"
+                },
+                {
+                    "count": 1,
+                    "path": "HELLEMMES CIMETIERE",
+                    "state": "displayed",
+                    "name": "HELLEMMES CIMETIERE"
+                },
+                {
+                    "count": 1,
+                    "path": "HERON PARC",
+                    "state": "displayed",
+                    "name": "HERON PARC"
+                },
+                {
+                    "count": 1,
+                    "path": "HIPPODROME",
+                    "state": "displayed",
+                    "name": "HIPPODROME"
+                },
+                {
+                    "count": 1,
+                    "path": "HOPITAL MILITAIRE",
+                    "state": "displayed",
+                    "name": "HOPITAL MILITAIRE"
+                },
+                {
+                    "count": 1,
+                    "path": "HOPITAL VICTOR PROVO",
+                    "state": "displayed",
+                    "name": "HOPITAL VICTOR PROVO"
+                },
+                {
+                    "count": 1,
+                    "path": "HOTEL DE POLICE",
+                    "state": "displayed",
+                    "name": "HOTEL DE POLICE"
+                },
+                {
+                    "count": 1,
+                    "path": "HOTEL DE REGION",
+                    "state": "displayed",
+                    "name": "HOTEL DE REGION"
+                },
+                {
+                    "count": 1,
+                    "path": "JARDIN BOTANIQUE",
+                    "state": "displayed",
+                    "name": "JARDIN BOTANIQUE"
+                },
+                {
+                    "count": 1,
+                    "path": "JARDIN VAUBAN",
+                    "state": "displayed",
+                    "name": "JARDIN VAUBAN"
+                },
+                {
+                    "count": 1,
+                    "path": "JB LEBAS",
+                    "state": "displayed",
+                    "name": "JB LEBAS"
+                },
+                {
+                    "count": 1,
+                    "path": "JEAN JAURES",
+                    "state": "displayed",
+                    "name": "JEAN JAURES"
+                },
+                {
+                    "count": 1,
+                    "path": "JEAN MOULIN",
+                    "state": "displayed",
+                    "name": "JEAN MOULIN"
+                },
+                {
+                    "count": 1,
+                    "path": "JEAN SANS PEUR",
+                    "state": "displayed",
+                    "name": "JEAN SANS PEUR"
+                },
+                {
+                    "count": 1,
+                    "path": "JEMMAPES",
+                    "state": "displayed",
+                    "name": "JEMMAPES"
+                }
+            ],
+            "name": "nom"
+        },
+        {
+            "facets": [
+                {
+                    "count": 109,
+                    "path": "LILLE",
+                    "state": "displayed",
+                    "name": "LILLE"
+                },
+                {
+                    "count": 36,
+                    "path": "ROUBAIX",
+                    "state": "displayed",
+                    "name": "ROUBAIX"
+                },
+                {
+                    "count": 25,
+                    "path": "TOURCOING",
+                    "state": "displayed",
+                    "name": "TOURCOING"
+                },
+                {
+                    "count": 21,
+                    "path": "VILLENEUVE D'ASCQ",
+                    "state": "displayed",
+                    "name": "VILLENEUVE D'ASCQ"
+                },
+                {
+                    "count": 11,
+                    "path": "MONS EN BAROEUL",
+                    "state": "displayed",
+                    "name": "MONS EN BAROEUL"
+                },
+                {
+                    "count": 10,
+                    "path": "LA MADELEINE",
+                    "state": "displayed",
+                    "name": "LA MADELEINE"
+                },
+                {
+                    "count": 6,
+                    "path": "LAMBERSART",
+                    "state": "displayed",
+                    "name": "LAMBERSART"
+                },
+                {
+                    "count": 6,
+                    "path": "LILLE HELLEMMES",
+                    "state": "displayed",
+                    "name": "LILLE HELLEMMES"
+                },
+                {
+                    "count": 4,
+                    "path": "MARCQ EN BAROEUL",
+                    "state": "displayed",
+                    "name": "MARCQ EN BAROEUL"
+                },
+                {
+                    "count": 3,
+                    "path": "CROIX",
+                    "state": "displayed",
+                    "name": "CROIX"
+                },
+                {
+                    "count": 3,
+                    "path": "LOOS",
+                    "state": "displayed",
+                    "name": "LOOS"
+                },
+                {
+                    "count": 3,
+                    "path": "RONCHIN",
+                    "state": "displayed",
+                    "name": "RONCHIN"
+                },
+                {
+                    "count": 3,
+                    "path": "SAINT ANDRE LEZ LILLE",
+                    "state": "displayed",
+                    "name": "SAINT ANDRE LEZ LILLE"
+                },
+                {
+                    "count": 3,
+                    "path": "WATTRELOS",
+                    "state": "displayed",
+                    "name": "WATTRELOS"
+                },
+                {
+                    "count": 2,
+                    "path": "HELLEMMES",
+                    "state": "displayed",
+                    "name": "HELLEMMES"
+                },
+                {
+                    "count": 2,
+                    "path": "LOMME",
+                    "state": "displayed",
+                    "name": "LOMME"
+                },
+                {
+                    "count": 1,
+                    "path": "FACHES-THUMESNIL",
+                    "state": "displayed",
+                    "name": "FACHES-THUMESNIL"
+                },
+                {
+                    "count": 1,
+                    "path": "LAMBERSAT",
+                    "state": "displayed",
+                    "name": "LAMBERSAT"
+                }
+            ],
+            "name": "commune"
+        },
+        {
+            "facets": [
+                {
+                    "count": 224,
+                    "path": "CONNECTED",
+                    "state": "displayed",
+                    "name": "CONNECTED"
+                },
+                {
+                    "count": 25,
+                    "path": "DISCONNECTED",
+                    "state": "displayed",
+                    "name": "DISCONNECTED"
+                }
+            ],
+            "name": "etatconnexion"
+        },
+        {
+            "facets": [
+                {
+                    "count": 1,
+                    "path": "1",
+                    "state": "displayed",
+                    "name": "1"
+                },
+                {
+                    "count": 1,
+                    "path": "2",
+                    "state": "displayed",
+                    "name": "2"
+                },
+                {
+                    "count": 1,
+                    "path": "3",
+                    "state": "displayed",
+                    "name": "3"
+                },
+                {
+                    "count": 1,
+                    "path": "4",
+                    "state": "displayed",
+                    "name": "4"
+                },
+                {
+                    "count": 1,
+                    "path": "5",
+                    "state": "displayed",
+                    "name": "5"
+                },
+                {
+                    "count": 1,
+                    "path": "6",
+                    "state": "displayed",
+                    "name": "6"
+                },
+                {
+                    "count": 1,
+                    "path": "7",
+                    "state": "displayed",
+                    "name": "7"
+                },
+                {
+                    "count": 1,
+                    "path": "8",
+                    "state": "displayed",
+                    "name": "8"
+                },
+                {
+                    "count": 1,
+                    "path": "9",
+                    "state": "displayed",
+                    "name": "9"
+                },
+                {
+                    "count": 1,
+                    "path": "10",
+                    "state": "displayed",
+                    "name": "10"
+                },
+                {
+                    "count": 1,
+                    "path": "11",
+                    "state": "displayed",
+                    "name": "11"
+                },
+                {
+                    "count": 1,
+                    "path": "12",
+                    "state": "displayed",
+                    "name": "12"
+                },
+                {
+                    "count": 1,
+                    "path": "13",
+                    "state": "displayed",
+                    "name": "13"
+                },
+                {
+                    "count": 1,
+                    "path": "14",
+                    "state": "displayed",
+                    "name": "14"
+                },
+                {
+                    "count": 1,
+                    "path": "15",
+                    "state": "displayed",
+                    "name": "15"
+                },
+                {
+                    "count": 1,
+                    "path": "16",
+                    "state": "displayed",
+                    "name": "16"
+                },
+                {
+                    "count": 1,
+                    "path": "17",
+                    "state": "displayed",
+                    "name": "17"
+                },
+                {
+                    "count": 1,
+                    "path": "18",
+                    "state": "displayed",
+                    "name": "18"
+                },
+                {
+                    "count": 1,
+                    "path": "19",
+                    "state": "displayed",
+                    "name": "19"
+                },
+                {
+                    "count": 1,
+                    "path": "20",
+                    "state": "displayed",
+                    "name": "20"
+                },
+                {
+                    "count": 1,
+                    "path": "21",
+                    "state": "displayed",
+                    "name": "21"
+                },
+                {
+                    "count": 1,
+                    "path": "22",
+                    "state": "displayed",
+                    "name": "22"
+                },
+                {
+                    "count": 1,
+                    "path": "23",
+                    "state": "displayed",
+                    "name": "23"
+                },
+                {
+                    "count": 1,
+                    "path": "24",
+                    "state": "displayed",
+                    "name": "24"
+                },
+                {
+                    "count": 1,
+                    "path": "25",
+                    "state": "displayed",
+                    "name": "25"
+                },
+                {
+                    "count": 1,
+                    "path": "26",
+                    "state": "displayed",
+                    "name": "26"
+                },
+                {
+                    "count": 1,
+                    "path": "27",
+                    "state": "displayed",
+                    "name": "27"
+                },
+                {
+                    "count": 1,
+                    "path": "28",
+                    "state": "displayed",
+                    "name": "28"
+                },
+                {
+                    "count": 1,
+                    "path": "29",
+                    "state": "displayed",
+                    "name": "29"
+                },
+                {
+                    "count": 1,
+                    "path": "30",
+                    "state": "displayed",
+                    "name": "30"
+                },
+                {
+                    "count": 1,
+                    "path": "31",
+                    "state": "displayed",
+                    "name": "31"
+                },
+                {
+                    "count": 1,
+                    "path": "32",
+                    "state": "displayed",
+                    "name": "32"
+                },
+                {
+                    "count": 1,
+                    "path": "33",
+                    "state": "displayed",
+                    "name": "33"
+                },
+                {
+                    "count": 1,
+                    "path": "34",
+                    "state": "displayed",
+                    "name": "34"
+                },
+                {
+                    "count": 1,
+                    "path": "35",
+                    "state": "displayed",
+                    "name": "35"
+                },
+                {
+                    "count": 1,
+                    "path": "36",
+                    "state": "displayed",
+                    "name": "36"
+                },
+                {
+                    "count": 1,
+                    "path": "37",
+                    "state": "displayed",
+                    "name": "37"
+                },
+                {
+                    "count": 1,
+                    "path": "38",
+                    "state": "displayed",
+                    "name": "38"
+                },
+                {
+                    "count": 1,
+                    "path": "39",
+                    "state": "displayed",
+                    "name": "39"
+                },
+                {
+                    "count": 1,
+                    "path": "40",
+                    "state": "displayed",
+                    "name": "40"
+                },
+                {
+                    "count": 1,
+                    "path": "41",
+                    "state": "displayed",
+                    "name": "41"
+                },
+                {
+                    "count": 1,
+                    "path": "42",
+                    "state": "displayed",
+                    "name": "42"
+                },
+                {
+                    "count": 1,
+                    "path": "43",
+                    "state": "displayed",
+                    "name": "43"
+                },
+                {
+                    "count": 1,
+                    "path": "44",
+                    "state": "displayed",
+                    "name": "44"
+                },
+                {
+                    "count": 1,
+                    "path": "45",
+                    "state": "displayed",
+                    "name": "45"
+                },
+                {
+                    "count": 1,
+                    "path": "46",
+                    "state": "displayed",
+                    "name": "46"
+                },
+                {
+                    "count": 1,
+                    "path": "47",
+                    "state": "displayed",
+                    "name": "47"
+                },
+                {
+                    "count": 1,
+                    "path": "48",
+                    "state": "displayed",
+                    "name": "48"
+                },
+                {
+                    "count": 1,
+                    "path": "49",
+                    "state": "displayed",
+                    "name": "49"
+                },
+                {
+                    "count": 1,
+                    "path": "50",
+                    "state": "displayed",
+                    "name": "50"
+                },
+                {
+                    "count": 1,
+                    "path": "51",
+                    "state": "displayed",
+                    "name": "51"
+                },
+                {
+                    "count": 1,
+                    "path": "52",
+                    "state": "displayed",
+                    "name": "52"
+                },
+                {
+                    "count": 1,
+                    "path": "53",
+                    "state": "displayed",
+                    "name": "53"
+                },
+                {
+                    "count": 1,
+                    "path": "54",
+                    "state": "displayed",
+                    "name": "54"
+                },
+                {
+                    "count": 1,
+                    "path": "55",
+                    "state": "displayed",
+                    "name": "55"
+                },
+                {
+                    "count": 1,
+                    "path": "56",
+                    "state": "displayed",
+                    "name": "56"
+                },
+                {
+                    "count": 1,
+                    "path": "57",
+                    "state": "displayed",
+                    "name": "57"
+                },
+                {
+                    "count": 1,
+                    "path": "58",
+                    "state": "displayed",
+                    "name": "58"
+                },
+                {
+                    "count": 1,
+                    "path": "59",
+                    "state": "displayed",
+                    "name": "59"
+                },
+                {
+                    "count": 1,
+                    "path": "60",
+                    "state": "displayed",
+                    "name": "60"
+                },
+                {
+                    "count": 1,
+                    "path": "61",
+                    "state": "displayed",
+                    "name": "61"
+                },
+                {
+                    "count": 1,
+                    "path": "62",
+                    "state": "displayed",
+                    "name": "62"
+                },
+                {
+                    "count": 1,
+                    "path": "63",
+                    "state": "displayed",
+                    "name": "63"
+                },
+                {
+                    "count": 1,
+                    "path": "64",
+                    "state": "displayed",
+                    "name": "64"
+                },
+                {
+                    "count": 1,
+                    "path": "65",
+                    "state": "displayed",
+                    "name": "65"
+                },
+                {
+                    "count": 1,
+                    "path": "66",
+                    "state": "displayed",
+                    "name": "66"
+                },
+                {
+                    "count": 1,
+                    "path": "67",
+                    "state": "displayed",
+                    "name": "67"
+                },
+                {
+                    "count": 1,
+                    "path": "68",
+                    "state": "displayed",
+                    "name": "68"
+                },
+                {
+                    "count": 1,
+                    "path": "69",
+                    "state": "displayed",
+                    "name": "69"
+                },
+                {
+                    "count": 1,
+                    "path": "70",
+                    "state": "displayed",
+                    "name": "70"
+                },
+                {
+                    "count": 1,
+                    "path": "71",
+                    "state": "displayed",
+                    "name": "71"
+                },
+                {
+                    "count": 1,
+                    "path": "72",
+                    "state": "displayed",
+                    "name": "72"
+                },
+                {
+                    "count": 1,
+                    "path": "73",
+                    "state": "displayed",
+                    "name": "73"
+                },
+                {
+                    "count": 1,
+                    "path": "74",
+                    "state": "displayed",
+                    "name": "74"
+                },
+                {
+                    "count": 1,
+                    "path": "75",
+                    "state": "displayed",
+                    "name": "75"
+                },
+                {
+                    "count": 1,
+                    "path": "76",
+                    "state": "displayed",
+                    "name": "76"
+                },
+                {
+                    "count": 1,
+                    "path": "77",
+                    "state": "displayed",
+                    "name": "77"
+                },
+                {
+                    "count": 1,
+                    "path": "78",
+                    "state": "displayed",
+                    "name": "78"
+                },
+                {
+                    "count": 1,
+                    "path": "79",
+                    "state": "displayed",
+                    "name": "79"
+                },
+                {
+                    "count": 1,
+                    "path": "80",
+                    "state": "displayed",
+                    "name": "80"
+                },
+                {
+                    "count": 1,
+                    "path": "81",
+                    "state": "displayed",
+                    "name": "81"
+                },
+                {
+                    "count": 1,
+                    "path": "82",
+                    "state": "displayed",
+                    "name": "82"
+                },
+                {
+                    "count": 1,
+                    "path": "83",
+                    "state": "displayed",
+                    "name": "83"
+                },
+                {
+                    "count": 1,
+                    "path": "84",
+                    "state": "displayed",
+                    "name": "84"
+                },
+                {
+                    "count": 1,
+                    "path": "85",
+                    "state": "displayed",
+                    "name": "85"
+                },
+                {
+                    "count": 1,
+                    "path": "86",
+                    "state": "displayed",
+                    "name": "86"
+                },
+                {
+                    "count": 1,
+                    "path": "87",
+                    "state": "displayed",
+                    "name": "87"
+                },
+                {
+                    "count": 1,
+                    "path": "88",
+                    "state": "displayed",
+                    "name": "88"
+                },
+                {
+                    "count": 1,
+                    "path": "89",
+                    "state": "displayed",
+                    "name": "89"
+                },
+                {
+                    "count": 1,
+                    "path": "90",
+                    "state": "displayed",
+                    "name": "90"
+                },
+                {
+                    "count": 1,
+                    "path": "91",
+                    "state": "displayed",
+                    "name": "91"
+                },
+                {
+                    "count": 1,
+                    "path": "92",
+                    "state": "displayed",
+                    "name": "92"
+                },
+                {
+                    "count": 1,
+                    "path": "93",
+                    "state": "displayed",
+                    "name": "93"
+                },
+                {
+                    "count": 1,
+                    "path": "94",
+                    "state": "displayed",
+                    "name": "94"
+                },
+                {
+                    "count": 1,
+                    "path": "95",
+                    "state": "displayed",
+                    "name": "95"
+                },
+                {
+                    "count": 1,
+                    "path": "96",
+                    "state": "displayed",
+                    "name": "96"
+                },
+                {
+                    "count": 1,
+                    "path": "97",
+                    "state": "displayed",
+                    "name": "97"
+                },
+                {
+                    "count": 1,
+                    "path": "98",
+                    "state": "displayed",
+                    "name": "98"
+                },
+                {
+                    "count": 1,
+                    "path": "99",
+                    "state": "displayed",
+                    "name": "99"
+                },
+                {
+                    "count": 1,
+                    "path": "100",
+                    "state": "displayed",
+                    "name": "100"
+                }
+            ],
+            "name": "libelle"
+        },
+        {
+            "facets": [
+                {
+                    "count": 191,
+                    "path": "AVEC TPE",
+                    "state": "displayed",
+                    "name": "AVEC TPE"
+                },
+                {
+                    "count": 58,
+                    "path": "SANS TPE",
+                    "state": "displayed",
+                    "name": "SANS TPE"
+                }
+            ],
+            "name": "type"
+        }
+    ]
+}
