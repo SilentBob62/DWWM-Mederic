@@ -6,7 +6,7 @@
 <div id="divContenu">
 	<div class="ligne titreLigne">
 		<div class="ville">Ville</div>
-		<div class="libelle">Nom du lieu</div>
+		<div class="libelle">Nom de la Station</div>
 		<div class="dispo">Etat</div>
 	</div>
 	<div class="espaceHorizon"></div>

@@ -41,6 +41,7 @@ img {
 	width: 100%;
 	flex-direction: column;
 	border-radius: 12px;
+	box-shadow: black 2px 2px 2px;
 }
 
 #titre {
