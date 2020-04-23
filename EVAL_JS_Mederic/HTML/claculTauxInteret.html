@@ -16,21 +16,24 @@
                     <fieldset>
                         <div class="info1 marge ligne">
                             <label for="">Capital Emprunté</label>
-                            <input type="text">
+                            <input type="text" id="emprunt" required pattern="[0-9]{1,}">
                             <div class="espace"></div>
                             <div class="unite">€</div>
+                            <div class="message"></div>
                         </div>
                         <div class="info2 marge ligne">
                             <label for="">Taux Nominal Annuel</label>
-                            <input type="text">
+                            <input type="text" id="taux" required pattern="[0-9]{1,2}">
                             <div class="espace"></div>
                             <div class="unite"> %</div>
+                            <div class="message"></div>
                         </div>
                         <div class="info3 marge ligne">
                             <label for="">Durée d'emprunt</label>
-                            <input type="text">
+                            <input type="text" id="duree" required pattern="[0-9]{1,}">
                             <div class="espace"></div>
                             <div class="unite">Ans</div>
+                            <div class="message"></div>
                         </div>
                     </fieldset>
                 </div>
@@ -38,15 +41,17 @@
                     <fieldset>
                         <div class="info4 marge ligne">
                             <label for="">Mensualité</label>
-                            <input type="text">
+                            <input type="text" id="mensualite" required pattern="[0-9]{1,}">
                             <div class="espace"></div>
                             <div class="unite">€</div>
+                            <div class="message"></div>
                         </div>
                         <div class="info5 marge ligne">
                             <label for="">Coût Total</label>
-                            <input type="text">
+                            <input type="text" id="cout" required pattern="[0-9]{1,}">
                             <div class="espace"></div>
                             <div class="unite">€</div>
+                            <div class="message"></div>
                         </div>
                     </fieldset>
                 </div>

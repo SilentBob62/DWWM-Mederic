@@ -37,3 +37,7 @@ input{
 .espace{
     width: 1vw;
 }
+.message{
+    width: 10vw;
+    margin-left: 2vw;
+}
