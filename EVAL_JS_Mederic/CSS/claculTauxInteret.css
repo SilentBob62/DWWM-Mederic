@@ -1,0 +1,39 @@
+.contenu{
+    display: flex;
+   
+}
+.center{
+    display: flex;
+    align-items: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.fondEcran{
+    background-color: #F5DEB3;
+}
+.largeur{
+    width: 50vw;
+}
+.hauteur{
+    height: 10vw;
+}
+.marge{
+    margin: 1vw 0;
+}
+.grandeMarge{
+    margin: 0 10vw;
+}
+.ligne{
+    display: flex;
+}
+label{
+    width: 10vw;
+}
+input{
+    width: 20vw;
+}
+.espace{
+    width: 1vw;
+}
