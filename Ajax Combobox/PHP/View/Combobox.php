@@ -9,6 +9,7 @@ if ($liste!=null)
 {
 	echo '<div id="combo">';
 	echo '<select id="region">';
+	echo '<option value=""></option>';
 	foreach($liste as $elt)
 	{
 		echo '<option value="'.$elt->getIdRegion().'">'.$elt->getLibelleRegion().'</option>';
