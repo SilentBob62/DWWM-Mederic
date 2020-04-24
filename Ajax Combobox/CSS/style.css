@@ -1,0 +1,193 @@
+﻿/*-----------------------------------GLOBAL-----------------------------------------*/
+body {
+	background-color: black;
+}
+
+img {
+	width: 100%;
+}
+
+#page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: wheat;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+#contenu {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	background-color: wheat;
+	justify-content: center;
+
+	margin: 10vh 10vw;
+}
+
+
+.espaceHorizon {
+	height: 2vw;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.ligne {
+	display: flex;
+	justify-content: center;
+}
+.ligneerreur {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+p{
+	margin-bottom: 0px;
+}
+/*-----------------------------------HEADER-----------------------------------------*/
+#entete {
+	background-color: #32db7b;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	min-height: 10vh;
+}
+
+#titre {
+	display: flex;
+	justify-content: space-between;
+	flex: 1.5;
+}
+
+#titre_page {
+	display: flex;
+	flex: 5;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+h1 {
+	text-align: center;
+}
+
+/*-----------------------------------FOOTER-----------------------------------------*/
+.piedDePage {
+	width: 100%;
+	background-color: #32db7b;
+	height: 10vh;
+	text-align: center;
+
+}
+
+
+#boutonFormulaire {
+	text-align: center;
+	color: coral;
+	font-size: 5vw;
+	padding-top: 2%;
+	width: 100%;
+}
+
+
+
+.fill {
+	background-color: coral;
+	font-family: Calibri;
+	width: 40%;
+	padding: 3%;
+	margin: 10px;
+	font-size: 2vw;
+	line-height: 2vw;
+	border-radius: 30px;
+	border-style: double;
+	position: relative;
+}
+
+#crudBarreOutil {
+	display: flex;
+	justify-content: center;
+	margin: .5vw 0 .5vw -25vw;
+}
+
+#crudTableau {
+	display: flex;
+	justify-content: center;
+}
+
+.crudEntete {
+	text-transform: capitalize;
+	border: black solid 0.5px;
+}
+
+.crudColonne {
+	padding: 0.5vw;
+	border: black solid 0.5px;
+}
+
+.crudEditColonne {
+	border: none;
+}
+
+.crudColonneBtn {
+	border: none;
+}
+
+
+
+.crudBtn {
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+	text-align: center;
+	color: #000;
+	border-radius: 12px 0 12px 0;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.4);
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.crudBtnOutil {
+	padding: 0.5% 1%;
+	background: linear-gradient(#32db7b, #32db7b);
+	margin: 1vw;
+}
+
+.crudBtnSuppr {
+	background: linear-gradient(#ff472e, #ff9789);
+}
+
+.crudBtnModif {
+	background: linear-gradient(#ffa533, #ffcb89);
+}
+
+.crudBtnEdit {
+	background: linear-gradient(#32d159, #7fffd4);
+}
+
+.crudBtnRetour {
+	background: linear-gradient(#999, #999);
+}
+
+.crudBtn:hover {
+	color: #FFF;
+	box-shadow: none;
+}
+
+.crudBtn:active {
+	color: #FFF;
+	box-shadow: none;
+}
+
+/******************************COMBO*************************************/
+#combo{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
