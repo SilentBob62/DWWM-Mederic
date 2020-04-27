@@ -26,7 +26,7 @@ foreach ($listePersonne as $personne) {
 
 }
 $affichage .= '
-            <div class="crudLigne">
+            <div class="contenuListe center">
                 <div>total : </div>
 					<div id="total"></div>
 				</div>';

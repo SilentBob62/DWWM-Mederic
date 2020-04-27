@@ -16,7 +16,7 @@ div, header, nav, article, section, aside, footer, h1, h2, h3, h4, h5, h6, p, a,
 }
 html, body {
 	height: 100%;
-    background-image: url(../img/fond.jpeg);
+    background-image: url(../img/maxresdefault.jpg);
     background-size: cover;
     background-attachment: fixed;
 	border: 0 solid transparent;
@@ -156,7 +156,10 @@ button:hover, a:hover{
 a.btncentre{
     margin:1vh auto;
 }
-
+.center{
+    display: flex;
+    justify-content: center;
+}
 /* ------------------------------------------------------------------------- */
 /* ----------------------------------------------MEDIA QUERIES 960px ---- */
 /* ------------------------------------------------------------------------- */
