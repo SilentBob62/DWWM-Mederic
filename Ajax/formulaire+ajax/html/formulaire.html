@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <script src="https://kit.fontawesome.com/13bc1841db.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<div class="formulaire center">
+<form action="resultat.php" method="GET">
+    <fieldset>
+        <legend><i class="fas fa-address-card"></i>Vos coordonnées</legend>
+        <label for="nom">Votre nom*</label>
+        <input type="text" name="nom" id="nom" maxlength="30" required>
+
+        <label for="prenom">Votre prenom*</label>
+        <input type="text" name="prenom" id="prenom"required>
+
+        <label for="date">Votre date de naissance*</label>
+        <input type="date" name="date" id="date"required>
+
+        <label for="adresse">Votre adresse*</label>
+        <input type="text" name="adresse" id="adresse" required>
+
+        <label for="ville">Votre ville*</label>
+        <input type="ville" name="ville" id="ville" required>
+
+        <label for="code">Votre code postal*</label>
+        <input type="number" name="code" id="code" required maxlength="5">
+        
+        <label for="amail">Votre e-mail*</label>
+        <input type="email" name="email" id="email" required>
+    </fieldset>
+        <div class="btn">
+            <button type="submit" name="valider"> Valider</button>
+            <button type="reset" name="annulez" class="annule"> Annulez</button>
+        </div>
+    </fieldset>
+</form>
+</div>
+</body>
+</html>

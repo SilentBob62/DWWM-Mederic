@@ -34,7 +34,7 @@ function changeRegion(){
         }
     };
     //on envoi la requête
-    req.open('POST', '/DWWM-Mederic/Ajax Combobox/PHP/Model/APIDepartementList.php', true);
+    req.open('POST', '/DWWM-Mederic/Ajax/Ajax Combobox/PHP/Model/APIDepartementList.php', true);
     req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     var args = "idRegion="+idReg;
     req.send(args);

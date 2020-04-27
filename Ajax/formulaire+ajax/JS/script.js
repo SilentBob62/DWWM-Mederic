@@ -15,5 +15,5 @@ requ.onreadystatechange = function(event) {
     }
 };
 
-requ.open('GET', '/DWWM-Mederic/Ajax/PHP/Model/Count.php', true);
+requ.open('GET', '/DWWM-Mederic/Ajax/formulaire+ajax/PHP/Model/Count.php', true);
 requ.send(null);
