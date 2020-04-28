@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15vw;
+    width: 70vw;
+}
+.donnee{
+    display: flex;
+    margin: 1vw;
+}
+label{
+    flex: 0.2;
+}
+input{
+    flex: 1;
+}
+.message{
+    flex: 0.2;
+}
+.black{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bas{
+    display: flex;
+}
+.bouton{
+    display: flex;
+    flex: 1;
+    margin-bottom: 1vw;
+}
+.espace{
+    flex: 2;
+}
+.border{
+    border: 3px rgb(30, 214, 30) solid;
+    border-radius: 10px;
+}

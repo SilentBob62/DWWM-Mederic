@@ -2,7 +2,8 @@
 <html>
 
 <head>
-
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="generate.css">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
     </header>
     <div class="content">
         <form method="POST" action="generate.php">
-            <div class="formulaire">
+            <div class="formulaire black border">
                 <div class="donnee">
                     <label for="host">Host</label>
                     <input name="host" type="text">
@@ -55,13 +56,17 @@
                     <input name="classe" type="text">
                     <div class="message"></div>
                 </div>
-                <div  class="bouton">
-                    <input type="submit" value="OK">
+                <div class="bas">
+                    <div class="espace"></div>
+                    <div class="bouton">
+                        <input type="submit" value="OK">
+                    </div>
+                    <div class="espace"></div>
                 </div>
             </div>
         </form>
     </div>
-    
+
 </body>
 
 </html>
