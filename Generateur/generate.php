@@ -1,21 +1,16 @@
 <?php
-// popen("cls", "w");
-// echo "==========================================\n";
-// echo "=================Générateur===============\n";
-// echo "==========================================\n\n";
 
-// ========================================================================================================================== //
-// => Pour générer hors-ligne, commenter la ligne 12 à 25 et décommenter les lignes 27 à 30 et remplir les variables ======== //
-// => Pour générer avec une BDD, commenter les 27 à 30, décommenter les lignes 12 à 25 et remplir DbConnect.Class.php ======= //
-// ========================================================================================================================== //
-// on demande le nom de la base de données, le nom de la table à exploiter, son champ ID et le nom de la classe voulue
+// ====================================================================//
+// ============================Générateur==============================//
+// ====================================================================//
 
-// $nomBDD = readline('=> Nom de la base de données : ');
-// $nomTable = readline('=> Nom de la table : ');
-// $idTable = readline('=> Champ ID de la table : ');
-// $nomClass = readline('===> Nom de la classe : ');
 
 //depuis generate.html
+
+$host= $_POST["host"];
+$port= $_POST["port"];
+$login= $_POST["login"];
+$MDP= $_POST["MDP"];
 $nomBDD= $_POST["BDD"];
 $nomTable= $_POST["table"];
 $idTable= $_POST["idTable"];
@@ -23,27 +18,7 @@ $nomClass= $_POST["classe"];
 // on met une majuscule à $nomClass au cas où et on appelle la fonction de création
 $nomClass = ucfirst($nomClass);
 
-require 'DbConnect.class.php';
-DbConnect::init($nomBDD); // ne pas oublier de changer les identifiants dans le fichier de connexion si besoin
-$db = DbConnect::getDb(); // on se connnecte à la base de données
-
-// on va chercher la liste des colonnes de la table
-$q = $db->query('SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = "' . $nomBDD . '" AND TABLE_NAME = "' . $nomTable . '"');
-// on boucle puis on retire la dernière valeur vide
-while ($listeColonnes[] = $q->fetch(PDO::FETCH_ASSOC)["COLUMN_NAME"]) {}
-unset($listeColonnes[array_key_last($listeColonnes)]);
-
-// $nomTable = "etats_civils";
-// $nomClass = "etatCivil";
-// $idTable = "id";
-// $listeColonnes = array('id', 'nom', 'prenom', 'genre');
-// ========================================================================================================================== //
-// ========================================================================================================================== //
-// variables css
-// ========================================================================================================================== //
-// ========================================================================================================================== //
-
-// on vérifie que les différents dossiers PHP existent sinon on les crées
+// on vérifie que les différents dossiers existent sinon on les crées
 if (!file_exists('php'))
     mkdir('php');
 if (!file_exists('php/view'))
@@ -59,7 +34,24 @@ if (!file_exists('js'))
 if (!file_exists('images'))
     mkdir('images');
 
+//on crée le dbConnect
+$affichage = fopen('php/model/DbConnect.class.php', 'w');
+fputs($affichage ,genereDbConnect());
+$affichage=fopen('parametre.ini','w');
+fputs($affichage ,  genereParametreIni($host,$port,$nomBDD,$login,$MDP));
+$affichage = fopen('php/controller/Parametre.Class.php', 'w');
+fputs($affichage ,genereParametreClass());
 
+
+require 'DbConnect.class.php';
+DbConnect::init($nomBDD); // ne pas oublier de changer les identifiants dans le fichier de connexion si besoin
+$db = DbConnect::getDb(); // on se connnecte à la base de données
+
+// on va chercher la liste des colonnes de la table
+$q = $db->query('SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = "' . $nomBDD . '" AND TABLE_NAME = "' . $nomTable . '"');
+// on boucle puis on retire la dernière valeur vide
+while ($listeColonnes[] = $q->fetch(PDO::FETCH_ASSOC)["COLUMN_NAME"]) {}
+unset($listeColonnes[array_key_last($listeColonnes)]);
 
 generation($nomTable, $nomClass, $idTable, $listeColonnes);
 
@@ -72,17 +64,14 @@ function generation($nomTable, $nomClass, $idTable, $listeColonnes)
     // on crée un fichier pour l'affichage
     $affichage = fopen('php/view/' . $nomClass . 'Affichage.Class.php', 'w');
     fputs($affichage, genererAffichage($nomTable, $nomClass, $idTable, $listeColonnes));
-    echo $nomClass . 'Affichage.Class.php crée dans php/controller/' . "\n";
 
     // on crée un  fichier pour la class
     $class = fopen('php/controller/' . $nomClass . '.Class.php', 'w');
     fputs($class, genererClass($nomClass, $listeColonnes));
-    echo $nomClass . '.Class.php crée dans php/controller/' . "\n";
 
     // on crée un fichier pour le manager
     $manager = fopen('php/model/' . $nomClass . 'Manager.Class.php', 'w');
     fputs($manager, genererManager($nomTable, $nomClass, $idTable, $listeColonnes));
-    echo $nomClass . 'Manager.Class.php crée dans php/model/' . "\n";
 }
 
 // ====================================================================//
@@ -150,9 +139,85 @@ function genererDetails($nomTable, $nomClass, $listeColonnes)
 // ====================================================================//
 // =============================CLASS==================================//
 // ====================================================================//
+function genereParametreClass()
+{
+    $affichage='
+    <?php
+    class Parametre
+    {
+        private static $_host;
+        private static $_port;
+        private static $_dbName;
+        private static $_login;
+        private static $_pwd;
 
+        public static function getHost()
+        {
+            return self::$_host;
+        }
+
+        public static function getPort()
+        {
+            return self::$_port;
+        }
+
+        public static function getDbName()
+        {
+            return self::$_dbName;
+        }
+
+        public static function getLogin()
+        {
+            return self::$_login;
+        }
+
+        public static function getPwd()
+        {
+            return self::$_pwd;
+        }
+        public static function init()
+        {
+            // si le fichier existe
+            if (file_exists("parametre.ini"))
+            {//appel habituel depuis index
+                $fic = "parametre.ini";
+            }
+            else
+            // si l\'API est appelé, l\'appel ce fait depuis le dossier Controller, il faut repartir à la racine
+            if (file_exists("../../parametre.ini"))
+            {
+                $fic = "../../parametre.ini";
+            }
+            else
+            {
+                echo "Pas de fichier de paramètres";
+            }
+
+            $flux = fopen($fic, "r"); //on ouvre le fichier en lecture
+            //tant qu\'il y a des lignes
+            while (!feof($flux))
+            {
+                $ligne = fgets($flux, 4096);
+                if ($ligne) // si la ligne n\'est pas vide
+                {
+                    $info = explode(":", $ligne); // on sépare la ligne selon le ;
+                    $param[$info[0]] = rtrim($info[1]); //on remplit un tableau associatif avec la 1ere partie en clé, la 2nde en valeur
+                }
+            }
+            // on remplie les attributs de la classe
+            self::$_host = $param["Host"];
+            self::$_port = $param["Port"];
+            self::$_dbName = $param["DbName"];
+            self::$_login = $param["Login"];
+            self::$_pwd = $param["Pwd"];
+
+        }
+
+    }
+    ';
+    return $affichage;
+}
 function genererClass($nomClass, $listeColonnes) //
-
 {
     $class = '<?php' . "\n" . 'class ' . $nomClass . "\n{\n";
     $class .= '/*******************************Attributs*******************************/' . "\n";
@@ -217,7 +282,7 @@ function genererToString($listeColonnes)
     $gen = "public function toString() \n{ \n return ";
 
     foreach ($listeColonnes as $uneColonne) {
-        $gen .= '$this->get' . ucfirst($uneColonne) . " . ";
+        $gen .= '$this->get' . ucfirst($uneColonne) . "() . ";
     }
 
     $gen = substr($gen, 0, strlen($gen) - 2);
@@ -325,3 +390,46 @@ function genererGetList($nomTable, $nomClass)
 
     return $gen;
 }
+// ====================================================================//
+// ===========================lien avec BDD============================//
+// ====================================================================//
+
+function genereDbConnect()
+{
+    $affichage='
+    <?php
+
+    // Ce fichier sera inclus � chaque fois que l\'on aura besoin d\'acceder � la base de donn�es.
+    // Il permet d\'ouvrir la connection � la base de donn�es
+    class DbConnect {
+	    private static $db;
+	
+	    public static function getDb() {
+		    return DbConnect::$db;
+	    }
+
+	    public static function init() {
+		    try {
+			    // On se connecte � MySQL
+			    self::$db= new PDO ('."'".'mysql:host='."'".'.Parametre::getHost().'."'".';port='."'".'.Parametre::getPort().'."'".';dbname='."'".'.Parametre::getDbName().'."'".';charset=utf8'."'".', Parametre::getLogin(),Parametre::getPwd() );
+		    } catch ( Exception $e ) {
+			    // En cas d\'erreur, on affiche un message et on arr�te tout
+			die ('."'". 'Erreur : '."'".' . $e->getMessage () );
+		    }
+	    }
+    }';
+    return $affichage;
+}
+
+function genereParametreIni($host,$port,$nomBDD,$login,$MDP)
+{
+    $affichage='
+    Host:'.$host.'
+    Port:'.$port.'
+    DbName:'.$nomBDD.'
+    Login:'.$login.'
+    Pwd:'.$MDP;
+    return $affichage;
+     
+}
+
