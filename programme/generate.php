@@ -63,6 +63,8 @@ unset($listeColonnes[array_key_last($listeColonnes)]);
 generation($nomTable, $nomClass, $idTable, $listeColonnes,$projet);
 //suprime le DbConnect qui sert au programme
 unlink('DbConnect.Class.php');
+
+header('Location:confirmation.php');
 // ====================================================================//
 // ============================GENERATION==============================//
 // ====================================================================//

@@ -27,6 +27,10 @@ header{
     margin-top: 22vh;
     box-shadow: black 2px 2px 2px;
 }
+.contenu{
+    display: flex;
+    margin-top: 30vh;
+}
 .donnee{
     display: flex;
     margin: 1vw;
@@ -76,6 +80,9 @@ input{
     justify-content: center;
 }
 .logo{
+    flex: 1;
+}
+.confirm{
     flex: 1;
 }
 .border{
