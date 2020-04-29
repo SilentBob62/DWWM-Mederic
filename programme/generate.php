@@ -7,6 +7,7 @@
 
 //depuis generate.html
 
+$projet=$_POST["projet"];
 $host= $_POST["host"];
 $port= $_POST["port"];
 $login= $_POST["login"];
@@ -19,29 +20,35 @@ $nomClass= $_POST["classe"];
 $nomClass = ucfirst($nomClass);
 
 // on vérifie que les différents dossiers existent sinon on les crées
-if (!file_exists('../php'))
-    mkdir('../php');
-if (!file_exists('../php/view'))
-    mkdir('../php/view');
-if (!file_exists('../php/controller'))
-    mkdir('../php/controller');
-if (!file_exists('../php/model'))
-    mkdir('../php/model');
-if (!file_exists('../css'))
-    mkdir('../css');
-if (!file_exists('../js'))
-    mkdir('../js');
-if (!file_exists('../images'))
-    mkdir('../images');
+if (!file_exists('../'.$projet))
+    mkdir('../'.$projet);
+if (!file_exists('../'.$projet.'/php'))
+    mkdir('../'.$projet.'/php');
+if (!file_exists('../'.$projet.'/php/view'))
+    mkdir('../'.$projet.'/php/view');
+if (!file_exists('../'.$projet.'/php/controller'))
+    mkdir('../'.$projet.'/php/controller');
+if (!file_exists('../'.$projet.'/php/model'))
+    mkdir('../'.$projet.'/php/model');
+if (!file_exists('../'.$projet.'/css'))
+    mkdir('../'.$projet.'/css');
+if (!file_exists('../'.$projet.'/js'))
+    mkdir('../'.$projet.'/js');
+if (!file_exists('../'.$projet.'/images'))
+    mkdir('../'.$projet.'/images');
 
 //on crée le dbConnect
-$affichage = fopen('../php/model/DbConnect.class.php', 'w');
+$affichage = fopen('../'.$projet.'/php/model/DbConnect.class.php', 'w');
 fputs($affichage ,genereDbConnect());
-$affichage=fopen('../parametre.ini','w');
+
+$affichage=fopen('../'.$projet.'/parametre.ini','w');
 fputs($affichage ,  genereParametreIni($host,$port,$nomBDD,$login,$MDP));
-$affichage = fopen('../php/controller/Parametre.Class.php', 'w');
+
+$affichage = fopen('../'.$projet.'/php/controller/Parametre.Class.php', 'w');
 fputs($affichage ,genereParametreClass());
 
+$affichage = fopen('DbConnect.Class.php', 'w');
+fputs($affichage ,genereDbConnectClass($host,$login,$port,$MDP));
 
 require 'DbConnect.class.php';
 DbConnect::init($nomBDD); // ne pas oublier de changer les identifiants dans le fichier de connexion si besoin
@@ -53,24 +60,25 @@ $q = $db->query('SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_
 while ($listeColonnes[] = $q->fetch(PDO::FETCH_ASSOC)["COLUMN_NAME"]) {}
 unset($listeColonnes[array_key_last($listeColonnes)]);
 
-generation($nomTable, $nomClass, $idTable, $listeColonnes);
-
+generation($nomTable, $nomClass, $idTable, $listeColonnes,$projet);
+//suprime le DbConnect qui sert au programme
+unlink('DbConnect.Class.php');
 // ====================================================================//
 // ============================GENERATION==============================//
 // ====================================================================//
 
-function generation($nomTable, $nomClass, $idTable, $listeColonnes)
+function generation($nomTable, $nomClass, $idTable, $listeColonnes,$projet)
 {
     // on crée un fichier pour l'affichage
-    $affichage = fopen('../php/view/' . $nomClass . 'Affichage.Class.php', 'w');
+    $affichage = fopen('../'.$projet.'/php/view/' . $nomClass . 'Affichage.Class.php', 'w');
     fputs($affichage, genererAffichage($nomTable, $nomClass, $idTable, $listeColonnes));
 
     // on crée un  fichier pour la class
-    $class = fopen('../php/controller/' . $nomClass . '.Class.php', 'w');
+    $class = fopen('../'.$projet.'/php/controller/' . $nomClass . '.Class.php', 'w');
     fputs($class, genererClass($nomClass, $listeColonnes));
 
     // on crée un fichier pour le manager
-    $manager = fopen('../php/model/' . $nomClass . 'Manager.Class.php', 'w');
+    $manager = fopen('../'.$projet.'/php/model/' . $nomClass . 'Manager.Class.php', 'w');
     fputs($manager, genererManager($nomTable, $nomClass, $idTable, $listeColonnes));
 }
 
@@ -139,6 +147,37 @@ function genererDetails($nomTable, $nomClass, $listeColonnes)
 // ====================================================================//
 // =============================CLASS==================================//
 // ====================================================================//
+function genereDbConnectClass($host,$utilisateur,$port,$motDePasse)
+{
+    $affichage='
+    <?php
+    class DbConnect {
+
+	private static $db;
+	
+	public static function getDb() {
+		return DbConnect::$db;
+	}
+
+    public static function init($base)
+    {
+        $host = "'.$host.'";
+        $utilisateur = "'.$utilisateur.'";
+        $motDePasse = "'.$motDePasse.'";
+        $port='.$port.';
+        try {
+            self::$db = new PDO('."'".'mysql:host='."'".' . $host . '."'".';port='."'".'.$port.'."'".'; charset=utf8; dbname='."'".' . $base, $utilisateur, $motDePasse);
+            self::$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (Exception $e) {
+            echo "Erreur : " . $e->getMessage() . "<br />";
+            echo "N° : " . $e->getCode();
+            die("Fin du script");
+        }
+    }
+}
+    ';
+    return $affichage;
+}
 function genereParametreClass()
 {
     $affichage='

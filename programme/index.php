@@ -19,6 +19,11 @@ echo'<!DOCTYPE html>
     <div class="content">
         <form method="POST" action="generate.php">
             <div class="formulaire blackTransparent border">
+            <div class="donnee">
+                    <label class="vert" for="projet">Projet</label>
+                    <input name="projet" type="text">
+                    <div class="message"></div>
+                </div>
                 <div class="donnee">
                     <label class="vert" for="host">Host</label>
                     <input name="host" type="text">
