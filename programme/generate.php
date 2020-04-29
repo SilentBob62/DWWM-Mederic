@@ -50,6 +50,22 @@ fputs($affichage ,genereParametreClass());
 $affichage = fopen('DbConnect.Class.php', 'w');
 fputs($affichage ,genereDbConnectClass($host,$login,$port,$MDP));
 
+$affichage = fopen('../'.$projet.'/php/view/confirmation.php', 'w');
+fputs($affichage ,genereConfirmation());
+
+$affichage = fopen('../'.$projet.'/php/view/footer.php', 'w');
+fputs($affichage ,genereFooter());
+
+$affichage = fopen('../'.$projet.'/php/view/head.php', 'w');
+fputs($affichage ,genereHead());
+
+$affichage = fopen('../'.$projet.'/php/view/'.$nomClass.'Liste.php', 'w');
+fputs($affichage ,genereListe($nomClass));
+
+$affichage = fopen('../'.$projet.'/php/view/'.$nomClass.'Action.php', 'w');
+fputs($affichage ,genereAction($nomClass));
+
+
 require 'DbConnect.class.php';
 DbConnect::init($nomBDD); // ne pas oublier de changer les identifiants dans le fichier de connexion si besoin
 $db = DbConnect::getDb(); // on se connnecte à la base de données
@@ -162,21 +178,21 @@ function genereDbConnectClass($host,$utilisateur,$port,$motDePasse)
 	}
 
     public static function init($base)
-    {
-        $host = "'.$host.'";
-        $utilisateur = "'.$utilisateur.'";
-        $motDePasse = "'.$motDePasse.'";
-        $port='.$port.';
-        try {
-            self::$db = new PDO('."'".'mysql:host='."'".' . $host . '."'".';port='."'".'.$port.'."'".'; charset=utf8; dbname='."'".' . $base, $utilisateur, $motDePasse);
-            self::$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        } catch (Exception $e) {
-            echo "Erreur : " . $e->getMessage() . "<br />";
-            echo "N° : " . $e->getCode();
-            die("Fin du script");
+        {
+            $host = "'.$host.'";
+            $utilisateur = "'.$utilisateur.'";
+            $motDePasse = "'.$motDePasse.'";
+            $port='.$port.';
+            try {
+                self::$db = new PDO('."'".'mysql:host='."'".' . $host . '."'".';port='."'".'.$port.'."'".'; charset=utf8; dbname='."'".' . $base, $utilisateur, $motDePasse);
+                self::$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            } catch (Exception $e) {
+                echo "Erreur : " . $e->getMessage() . "<br />";
+                echo "N° : " . $e->getCode();
+                die("Fin du script");
+            }
         }
     }
-}
     ';
     return $affichage;
 }
@@ -496,14 +512,13 @@ function genereFooter()
     return $affichage;
 }
 
-function genereHead($titre)
+function genereHead()
 {
     $affichage='
     <!DOCTYPE html>
     <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>'.$titre.'</title>
         <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
         <meta content="IE=edge" http-equiv=X-UA-Compatible>
