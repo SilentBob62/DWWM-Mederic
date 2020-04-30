@@ -1,0 +1,32 @@
+/*
+Theme Name: MonTwentyseventeen
+Description: Theme enfant de moi
+Author: moi
+Author URI:
+Template: twentyseventeen
+Version: 
+*/
+.site-info{
+	display: none;	
+}
+.navigation-top{
+	background-color: black;
+}
+.icon{
+	color: red;
+}
+.menu-item a{
+	color:red;
+}
+.menu-item:hover{
+		background-color:#575757;
+}
+/* .wp-block-columns{
+	padding-top:1vw;
+	padding-left:1vw;
+	background-color:black;
+	color: white;
+}
+.wp-block-image{
+	border: 3px gray solid
+}  */
