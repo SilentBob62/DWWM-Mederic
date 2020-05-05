@@ -1,0 +1,272 @@
+0000.000 (0) Opened log file at time: Tue, 05 May 2020 09:39:51 +0000 on http://host/DWWM-Mederic/projet%20conan/conan
+0000.003 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.23 WP: 5.4 PHP: 7.3.12 (apache2handler, Windows NT DESKTOP-OAVAD8N 10.0 build 18362 (Windows 10) AMD64) MySQL: 8.0.18 WPLANG: fr_FR Server: Apache/2.4.41 (Win64) PHP/7.3.12 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 29.8M | 2M) multisite: N openssl: OpenSSL 1.1.1d  10 Sep 2019 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.004 (0) Free space on disk containing Updraft's temporary directory: 308810.8 MB
+0000.010 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.012 (0) Semaphore (fd, wp3_options) being initialised
+0000.014 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.016 (0) Set semaphore last lock (fd) time to 2020-05-05 09:39:51
+0000.016 (0) Semaphore lock (fd) complete
+0000.019 (0) Backup run: resumption=0, nonce=6b67b88d7ef5, file_nonce=6b67b88d7ef5 begun at=1588671591 (0s ago), job type=backup
+0000.021 (0) Scheduling a resumption (1) after 300 seconds (1588671891) in case this run gets aborted
+0000.029 (0) Checking if we have a zip executable available
+0000.031 (0) Creation of backups of directories: beginning
+0000.035 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0001.425 (0) Total entities for the zip file: 464 directories, 2871 files (0 skipped as non-modified), 49.8 MB
+0001.471 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0001.515 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0001.560 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0001.604 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0001.653 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0001.655 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (9 MB, 2871 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0002.456 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 600 files added (on-disk size: 3420.2 KB)
+0002.499 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 700 files added (on-disk size: 3420.2 KB)
+0002.542 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 800 files added (on-disk size: 3420.2 KB)
+0002.586 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 900 files added (on-disk size: 3420.2 KB)
+0002.628 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 1000 files added (on-disk size: 3420.2 KB)
+0002.630 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (5.1 MB, 2871 files batched, 501 (1002) added so far); re-opening (prior size: 3420.2 KB)
+0003.102 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 1100 files added (on-disk size: 5605.1 KB)
+0003.145 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 1200 files added (on-disk size: 5605.1 KB)
+0003.188 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 1300 files added (on-disk size: 5605.1 KB)
+0003.232 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 1400 files added (on-disk size: 5605.1 KB)
+0003.278 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 1500 files added (on-disk size: 5605.1 KB)
+0003.280 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (12.1 MB, 2871 files batched, 501 (1503) added so far); re-opening (prior size: 5605.1 KB)
+0004.158 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 1600 files added (on-disk size: 8656.7 KB)
+0004.201 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 1700 files added (on-disk size: 8656.7 KB)
+0004.242 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 1800 files added (on-disk size: 8656.7 KB)
+0004.285 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 1900 files added (on-disk size: 8656.7 KB)
+0004.328 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 2000 files added (on-disk size: 8656.7 KB)
+0004.331 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (18.1 MB, 2871 files batched, 501 (2004) added so far); re-opening (prior size: 8656.7 KB)
+0005.667 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 2100 files added (on-disk size: 13815.8 KB)
+0005.710 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 2200 files added (on-disk size: 13815.8 KB)
+0005.753 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 2300 files added (on-disk size: 13815.8 KB)
+0005.799 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 2400 files added (on-disk size: 13815.8 KB)
+0005.843 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 2500 files added (on-disk size: 13815.8 KB)
+0005.846 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.8 MB, 2871 files batched, 501 (2505) added so far); re-opening (prior size: 13815.8 KB)
+0006.186 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 2600 files added (on-disk size: 14518.4 KB)
+0006.230 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 2700 files added (on-disk size: 14518.4 KB)
+0006.273 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip.tmp: 2800 files added (on-disk size: 14518.4 KB)
+0006.889 (0) Created plugins zip (0) - 16587.2 KB in 6.9 s (2421.5 KB/s) (sha1: 73ce63c6a0267907a6ee811e78d045c578bbd355, sha256: 4b200ed13c60987c9a64579229613154c4c78f6813c0dcf30e5a34aa07a076f1)
+0006.893 (0) Beginning creation of dump of themes (split every: 400 MB)
+0007.065 (0) Total entities for the zip file: 80 directories, 345 files (0 skipped as non-modified), 7.6 MB
+0007.108 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0007.150 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0007.192 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0007.756 (0) Created themes zip (0) - 4681.7 KB in 0.9 s (5446.8 KB/s) (sha1: 5d35a0abe2af564d0bbaedfc4ad77aea4cb1578b, sha256: 5a0b972d60eb1fe44c80a2ede0fd513a4f6dcd301446b696ca2096fd094d4901)
+0007.761 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0007.762 (0) Looking for candidates to backup in: C:\localHost\DWWM-Mederic\projet conan\conan/wp-content/uploads
+0007.763 (0) finding files: 2020: adding to list (1)
+0007.763 (0) finding files: uag-plugin: adding to list (2)
+0007.764 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0007.894 (0) Total entities for the zip file: 4 directories, 328 files (0 skipped as non-modified), 37.9 MB
+0007.935 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0007.978 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0007.984 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25.5 MB, 328 files batched, 213 (213) added so far); re-opening (prior size: 0 KB)
+0008.102 (0) A useful amount of data was added after this amount of zip processing: 0.4 s (normalised: 0.4 s, rate: 64985.3 KB/s)
+0008.104 (0) Performance is good - will increase the amount of data we attempt to batch (time=0.40225505828857, normalised_time=0.39393510569746, max_time=8.1025681495667, data points known=1, old_max_bytes=26214400, new_max_bytes=209715200)
+0008.140 (0) Zip: backup_2020-05-05-1139_Conan_6b67b88d7ef5-uploads.zip.tmp: 300 files added (on-disk size: 26173.2 KB)
+0008.601 (0) Created uploads zip (0) - 38832.5 KB in 0.8 s (46638.8 KB/s) (sha1: 1f93b4377afd38782cc59db2722512607b87e71a, sha256: baa95a72503d46fbb987aeb42a063b90d9659bfaf1c6f99b6fc84edf14a79496)
+0008.605 (0) Beginning backup of other directories found in the content directory (index: 0)
+0008.606 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0008.607 (0) Looking for candidates to backup in: C:\localHost\DWWM-Mederic\projet conan\conan/wp-content
+0008.608 (0) finding files: gallery: adding to list (1)
+0008.609 (0) finding files: index.php: adding to list (2)
+0008.610 (0) finding files: languages: adding to list (3)
+0008.610 (0) finding files: ngg: adding to list (4)
+0008.611 (0) finding files: plugins: skipping: this is the plugins directory
+0008.612 (0) finding files: themes: skipping: this is the themes directory
+0008.613 (0) finding files: updraft: skipping: this is the updraft directory
+0008.613 (0) finding files: upgrade: skipping: excluded by options
+0008.614 (0) finding files: uploads: skipping: this is the uploads directory
+0008.686 (0) Total entities for the zip file: 62 directories, 94 files (0 skipped as non-modified), 14.1 MB
+0009.321 (0) Created others zip (0) - 12524.3 KB in 0.7 s (17820.4 KB/s) (sha1: c35d2a7cbf3539907f00056d3193e64780a23e57, sha256: 23e33cd773ccd06a80b4bf9cd927a6e20422019a339b50d0c7cad2b57ae87178)
+0009.327 (0) Saving backup status to database (elements: 8)
+0009.329 (0) Beginning creation of database dump (WordPress DB)
+0009.790 (0) Table wp3_options: Total expected rows (approximate): 254
+0009.826 (0) Table wp3_options: Total rows added: 250 in 0.03 seconds
+0009.828 (0) Table wp3_options: finishing file (backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_options.table.gz - 78.6 KB)
+0010.309 (0) Table wp3_users: Total expected rows (approximate): 1
+0010.323 (0) Table wp3_users: Total rows added: 1 in 0.01 seconds
+0010.328 (0) Table wp3_users: finishing file (backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_users.table.gz - 0.6 KB)
+0010.929 (0) Table wp3_usermeta: Total expected rows (approximate): 39
+0010.951 (0) Table wp3_usermeta: Total rows added: 39 in 0.01 seconds
+0010.956 (0) Table wp3_usermeta: finishing file (backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_usermeta.table.gz - 1.3 KB)
+0011.151 (0) Table wp3_commentmeta: Total expected rows (approximate): 0
+0011.161 (0) Table wp3_commentmeta: Total rows added: 0 in 0.01 seconds
+0011.166 (0) Table wp3_commentmeta: finishing file (backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_commentmeta.table.gz - 0.4 KB)
+0011.596 (0) Table wp3_comments: Total expected rows (approximate): 1
+0011.609 (0) Table wp3_comments: Total rows added: 1 in 0.01 seconds
+0011.614 (0) Table wp3_comments: finishing file (backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_comments.table.gz - 0.8 KB)
+0011.952 (0) Table wp3_links: Total expected rows (approximate): 0
+0011.964 (0) Table wp3_links: Total rows added: 0 in 0.01 seconds
+0011.969 (0) Table wp3_links: finishing file (backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_links.table.gz - 0.4 KB)
+0012.006 (0) Table wp3_postmeta: Total expected rows (approximate): 764
+0012.038 (0) Table wp3_postmeta: Total rows added: 764 in 0.03 seconds
+0012.040 (0) Table wp3_postmeta: finishing file (backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_postmeta.table.gz - 12.9 KB)
+0012.084 (0) Table wp3_posts: Total expected rows (approximate): 416
+0012.151 (0) Table wp3_posts: Total rows added: 416 in 0.07 seconds
+0012.153 (0) Table wp3_posts: finishing file (backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_posts.table.gz - 70.4 KB)
+0012.183 (0) Table wp3_term_relationships: Total expected rows (approximate): 20
+0012.186 (0) Table wp3_term_relationships: Total rows added: 20 in 0.00 seconds
+0012.188 (0) Table wp3_term_relationships: finishing file (backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_term_relationships.table.gz - 0.4 KB)
+0012.228 (0) Table wp3_term_taxonomy: Total expected rows (approximate): 6
+0012.231 (0) Table wp3_term_taxonomy: Total rows added: 6 in 0.00 seconds
+0012.232 (0) Table wp3_term_taxonomy: finishing file (backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_term_taxonomy.table.gz - 0.5 KB)
+0012.264 (0) Table wp3_termmeta: Total expected rows (approximate): 0
+0012.267 (0) Table wp3_termmeta: Total rows added: 0 in 0.00 seconds
+0012.268 (0) Table wp3_termmeta: finishing file (backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_termmeta.table.gz - 0.4 KB)
+0012.316 (0) Table wp3_terms: Total expected rows (approximate): 6
+0012.319 (0) Table wp3_terms: Total rows added: 6 in 0.00 seconds
+0012.320 (0) Table wp3_terms: finishing file (backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_terms.table.gz - 0.5 KB)
+0012.368 (0) Table wp3_ngg_album: Total expected rows (approximate): 0
+0012.371 (0) Table wp3_ngg_album: Total rows added: 0 in 0.00 seconds
+0012.372 (0) Table wp3_ngg_album: finishing file (backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_ngg_album.table.gz - 0.4 KB)
+0012.394 (0) Table wp3_ngg_gallery: Total expected rows (approximate): 5
+0012.397 (0) Table wp3_ngg_gallery: Total rows added: 5 in 0.00 seconds
+0012.398 (0) Table wp3_ngg_gallery: finishing file (backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_ngg_gallery.table.gz - 0.6 KB)
+0012.463 (0) Table wp3_ngg_pictures: Total expected rows (approximate): 19
+0012.467 (0) Table wp3_ngg_pictures: Total rows added: 19 in 0.00 seconds
+0012.486 (0) Table wp3_ngg_pictures: finishing file (backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_ngg_pictures.table.gz - 3.2 KB)
+0012.490 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_options.table.gz (1/15): adding to final database dump
+0012.503 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_users.table.gz (2/15): adding to final database dump
+0012.504 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_usermeta.table.gz (3/15): adding to final database dump
+0012.506 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_commentmeta.table.gz (4/15): adding to final database dump
+0012.507 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_comments.table.gz (5/15): adding to final database dump
+0012.508 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_links.table.gz (6/15): adding to final database dump
+0012.509 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_postmeta.table.gz (7/15): adding to final database dump
+0012.515 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_posts.table.gz (8/15): adding to final database dump
+0012.533 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_term_relationships.table.gz (9/15): adding to final database dump
+0012.534 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_term_taxonomy.table.gz (10/15): adding to final database dump
+0012.535 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_termmeta.table.gz (11/15): adding to final database dump
+0012.536 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_terms.table.gz (12/15): adding to final database dump
+0012.538 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_ngg_album.table.gz (13/15): adding to final database dump
+0012.539 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_ngg_gallery.table.gz (14/15): adding to final database dump
+0012.540 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-db-table-wp3_ngg_pictures.table.gz (15/15): adding to final database dump
+0012.543 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-db.gz: finished writing out complete database file (152 KB)
+0012.550 (0) Total database tables backed up: 15 (backup_2020-05-05-1139_Conan_6b67b88d7ef5-db.gz, size: 172908, sha1: 23c0751d50aa28fcccac68f5be6f88b32909f76b, sha256: 4a4b1ac9adfa30e149c04a3e2205a4b5a7ec5d5efbdbd8c5eb79893163aa9b91)
+0012.556 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0012.557 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0012.558 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0012.559 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-others.zip: others: This file has not yet been successfully uploaded: will queue
+0012.560 (0) backup_2020-05-05-1139_Conan_6b67b88d7ef5-db.gz: db: This file has not yet been successfully uploaded: will queue
+0012.561 (0) Saving backup history. Total backup size: 71.1 MB
+0012.563 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0012.566 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0012.568 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-db48adc9044ba458b71257d580bb4b98)
+0013.191 (0) Google Drive: creating path: /UpdraftPlus
+0014.492 (0) Google Drive: quota usage: used=0 MB, total=15360 MB, available=15360 MB
+0014.496 (0) Google Drive: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip: Attempting to upload to Google Drive (into folder id: 1Z3UXmJ50q1BkNoVW4-NwDMaU_sUb_Tla)
+0015.036 (0) Googledrive chunked upload: 6.2 % uploaded (1048576)
+0015.314 (0) Googledrive chunked upload: 12.3 % uploaded (2097152)
+0015.563 (0) Googledrive chunked upload: 18.5 % uploaded (3145728)
+0015.784 (0) Googledrive chunked upload: 24.7 % uploaded (4194304)
+0016.052 (0) Googledrive chunked upload: 30.9 % uploaded (5242880)
+0016.328 (0) Googledrive chunked upload: 37 % uploaded (6291456)
+0016.608 (0) Googledrive chunked upload: 43.2 % uploaded (7340032)
+0016.863 (0) Googledrive chunked upload: 49.4 % uploaded (8388608)
+0017.163 (0) Googledrive chunked upload: 55.6 % uploaded (9437184)
+0017.412 (0) Googledrive chunked upload: 61.7 % uploaded (10485760)
+0017.690 (0) Googledrive chunked upload: 67.9 % uploaded (11534336)
+0017.978 (0) Googledrive chunked upload: 74.1 % uploaded (12582912)
+0018.209 (0) Googledrive chunked upload: 80.3 % uploaded (13631488)
+0018.453 (0) Googledrive chunked upload: 86.4 % uploaded (14680064)
+0018.737 (0) Googledrive chunked upload: 92.6 % uploaded (15728640)
+0019.018 (0) Googledrive chunked upload: 98.8 % uploaded (16777216)
+0020.488 (0) Googledrive chunked upload: 100 % uploaded (16777216)
+0020.491 (0) Google Drive: OK: Archive backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip uploaded in 5.99 seconds
+0020.492 (0) Recording as successfully uploaded: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip
+0020.496 (0) Deleting local file: backup_2020-05-05-1139_Conan_6b67b88d7ef5-plugins.zip: OK
+0021.131 (0) Google Drive: quota usage: used=16.2 MB, total=15360 MB, available=15343.8 MB
+0021.135 (0) Google Drive: backup_2020-05-05-1139_Conan_6b67b88d7ef5-themes.zip: Attempting to upload to Google Drive (into folder id: 1Z3UXmJ50q1BkNoVW4-NwDMaU_sUb_Tla)
+0021.746 (0) Googledrive chunked upload: 21.9 % uploaded (1048576)
+0021.998 (0) Googledrive chunked upload: 43.7 % uploaded (2097152)
+0022.212 (0) Googledrive chunked upload: 65.6 % uploaded (3145728)
+0022.444 (0) Googledrive chunked upload: 87.5 % uploaded (4194304)
+0023.518 (0) Googledrive chunked upload: 100 % uploaded (4194304)
+0023.531 (0) Google Drive: OK: Archive backup_2020-05-05-1139_Conan_6b67b88d7ef5-themes.zip uploaded in 2.39 seconds
+0023.534 (0) Recording as successfully uploaded: backup_2020-05-05-1139_Conan_6b67b88d7ef5-themes.zip
+0023.546 (0) Deleting local file: backup_2020-05-05-1139_Conan_6b67b88d7ef5-themes.zip: OK
+0023.913 (0) Google Drive: quota usage: used=20.8 MB, total=15360 MB, available=15339.2 MB
+0023.914 (0) Google Drive: backup_2020-05-05-1139_Conan_6b67b88d7ef5-uploads.zip: Attempting to upload to Google Drive (into folder id: 1Z3UXmJ50q1BkNoVW4-NwDMaU_sUb_Tla)
+0024.897 (0) Googledrive chunked upload: 2.6 % uploaded (1048576)
+0025.236 (0) Googledrive chunked upload: 5.3 % uploaded (2097152)
+0025.506 (0) Googledrive chunked upload: 7.9 % uploaded (3145728)
+0025.734 (0) Googledrive chunked upload: 10.5 % uploaded (4194304)
+0025.961 (0) Googledrive chunked upload: 13.2 % uploaded (5242880)
+0026.236 (0) Googledrive chunked upload: 15.8 % uploaded (6291456)
+0026.497 (0) Googledrive chunked upload: 18.5 % uploaded (7340032)
+0026.746 (0) Googledrive chunked upload: 21.1 % uploaded (8388608)
+0026.990 (0) Googledrive chunked upload: 23.7 % uploaded (9437184)
+0027.280 (0) Googledrive chunked upload: 26.4 % uploaded (10485760)
+0027.522 (0) Googledrive chunked upload: 29 % uploaded (11534336)
+0027.798 (0) Googledrive chunked upload: 31.6 % uploaded (12582912)
+0028.051 (0) Googledrive chunked upload: 34.3 % uploaded (13631488)
+0028.277 (0) Googledrive chunked upload: 36.9 % uploaded (14680064)
+0028.527 (0) Googledrive chunked upload: 39.6 % uploaded (15728640)
+0028.803 (0) Googledrive chunked upload: 42.2 % uploaded (16777216)
+0029.054 (0) Googledrive chunked upload: 44.8 % uploaded (17825792)
+0029.336 (0) Googledrive chunked upload: 47.5 % uploaded (18874368)
+0029.611 (0) Googledrive chunked upload: 50.1 % uploaded (19922944)
+0029.874 (0) Googledrive chunked upload: 52.7 % uploaded (20971520)
+0030.123 (0) Googledrive chunked upload: 55.4 % uploaded (22020096)
+0030.393 (0) Googledrive chunked upload: 58 % uploaded (23068672)
+0030.620 (0) Googledrive chunked upload: 60.7 % uploaded (24117248)
+0030.836 (0) Googledrive chunked upload: 63.3 % uploaded (25165824)
+0031.148 (0) Googledrive chunked upload: 65.9 % uploaded (26214400)
+0031.436 (0) Googledrive chunked upload: 68.6 % uploaded (27262976)
+0031.689 (0) Googledrive chunked upload: 71.2 % uploaded (28311552)
+0031.943 (0) Googledrive chunked upload: 73.8 % uploaded (29360128)
+0032.208 (0) Googledrive chunked upload: 76.5 % uploaded (30408704)
+0032.471 (0) Googledrive chunked upload: 79.1 % uploaded (31457280)
+0032.758 (0) Googledrive chunked upload: 81.7 % uploaded (32505856)
+0033.259 (0) Googledrive chunked upload: 84.4 % uploaded (33554432)
+0033.505 (0) Googledrive chunked upload: 87 % uploaded (34603008)
+0033.772 (0) Googledrive chunked upload: 89.7 % uploaded (35651584)
+0034.034 (0) Googledrive chunked upload: 92.3 % uploaded (36700160)
+0034.320 (0) Googledrive chunked upload: 94.9 % uploaded (37748736)
+0034.640 (0) Googledrive chunked upload: 97.6 % uploaded (38797312)
+0035.855 (0) Googledrive chunked upload: 100 % uploaded (38797312)
+0035.859 (0) Google Drive: OK: Archive backup_2020-05-05-1139_Conan_6b67b88d7ef5-uploads.zip uploaded in 11.94 seconds
+0035.860 (0) Recording as successfully uploaded: backup_2020-05-05-1139_Conan_6b67b88d7ef5-uploads.zip
+0035.868 (0) Deleting local file: backup_2020-05-05-1139_Conan_6b67b88d7ef5-uploads.zip: OK
+0036.344 (0) Google Drive: quota usage: used=58.7 MB, total=15360 MB, available=15301.3 MB
+0036.348 (0) Google Drive: backup_2020-05-05-1139_Conan_6b67b88d7ef5-others.zip: Attempting to upload to Google Drive (into folder id: 1Z3UXmJ50q1BkNoVW4-NwDMaU_sUb_Tla)
+0036.980 (0) Googledrive chunked upload: 8.2 % uploaded (1048576)
+0037.243 (0) Googledrive chunked upload: 16.4 % uploaded (2097152)
+0037.515 (0) Googledrive chunked upload: 24.5 % uploaded (3145728)
+0037.799 (0) Googledrive chunked upload: 32.7 % uploaded (4194304)
+0038.060 (0) Googledrive chunked upload: 40.9 % uploaded (5242880)
+0038.285 (0) Googledrive chunked upload: 49.1 % uploaded (6291456)
+0038.532 (0) Googledrive chunked upload: 57.2 % uploaded (7340032)
+0038.809 (0) Googledrive chunked upload: 65.4 % uploaded (8388608)
+0039.073 (0) Googledrive chunked upload: 73.6 % uploaded (9437184)
+0039.379 (0) Googledrive chunked upload: 81.8 % uploaded (10485760)
+0039.649 (0) Googledrive chunked upload: 89.9 % uploaded (11534336)
+0039.920 (0) Googledrive chunked upload: 98.1 % uploaded (12582912)
+0040.974 (0) Googledrive chunked upload: 100 % uploaded (12582912)
+0040.976 (0) Google Drive: OK: Archive backup_2020-05-05-1139_Conan_6b67b88d7ef5-others.zip uploaded in 4.62 seconds
+0040.977 (0) Recording as successfully uploaded: backup_2020-05-05-1139_Conan_6b67b88d7ef5-others.zip
+0040.981 (0) Deleting local file: backup_2020-05-05-1139_Conan_6b67b88d7ef5-others.zip: OK
+0041.311 (0) Google Drive: quota usage: used=70.9 MB, total=15360 MB, available=15289.1 MB
+0041.314 (0) Google Drive: backup_2020-05-05-1139_Conan_6b67b88d7ef5-db.gz: Attempting to upload to Google Drive (into folder id: 1Z3UXmJ50q1BkNoVW4-NwDMaU_sUb_Tla)
+0043.057 (0) Googledrive chunked upload: 100 % uploaded
+0043.060 (0) Google Drive: OK: Archive backup_2020-05-05-1139_Conan_6b67b88d7ef5-db.gz uploaded in 1.74 seconds
+0043.061 (0) Recording as successfully uploaded: backup_2020-05-05-1139_Conan_6b67b88d7ef5-db.gz
+0043.063 (0) Deleting local file: backup_2020-05-05-1139_Conan_6b67b88d7ef5-db.gz: OK
+0043.066 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0043.067 (0) Number of backup sets in history: 1; groups (db): 1
+0043.068 (0) Examining (for databases) backup set with group_id=0, nonce=6b67b88d7ef5, datestamp=1588671591 (May 05 2020 09:39:51)
+0043.069 (0) This backup set is the backup set just made, so will not be deleted.
+0043.069 (0) Number of backup sets in history: 1; groups (files): 1
+0043.070 (0) Examining (for files) backup set with nonce=6b67b88d7ef5, datestamp=1588671591 (May 05 2020 09:39:51)
+0043.070 (0) This backup set is the backup set just made, so will not be deleted.
+0043.070 (0) This backup set is the backup set just made, so will not be deleted.
+0043.071 (0) This backup set is the backup set just made, so will not be deleted.
+0043.071 (0) This backup set is the backup set just made, so will not be deleted.
+0043.071 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0043.072 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0043.074 (0) Resume backup (6b67b88d7ef5, 0): finish run
+0043.076 (0) Decremented the semaphore (fd) by 1
+0043.077 (0) Semaphore (fd) unlocked
+0043.077 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0043.080 (0) No email will/can be sent - the user has not configured an email address.
+0043.081 (0) The backup apparently succeeded and is now complete
