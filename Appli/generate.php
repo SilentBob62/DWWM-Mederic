@@ -1,5 +1,4 @@
 <?php
-
 // ====================================================================//
 // ============================Générateur==============================//
 // ====================================================================//
@@ -13,11 +12,10 @@ $port= $_POST["port"];
 $login= $_POST["login"];
 $MDP= $_POST["MDP"];
 $nomBDD= $_POST["BDD"];
-$nomTable= $_POST["table"];
-$idTable= $_POST["idTable"];
-$nomClass= $_POST["classe"];
-// on met une majuscule à $nomClass au cas où et on appelle la fonction de création
-$nomClass = ucfirst($nomClass);
+$nbTable= $_POST["nbTable"];
+
+
+
 
 // on vérifie que les différents dossiers existent sinon on les crées
 if (!file_exists('../'.$projet))
@@ -59,28 +57,45 @@ fputs($affichage ,genereFooter());
 $affichage = fopen('../'.$projet.'/php/view/head.php', 'w');
 fputs($affichage ,genereHead());
 
-$affichage = fopen('../'.$projet.'/php/view/'.$nomClass.'Liste.php', 'w');
-fputs($affichage ,genereListe($nomClass));
 
-$affichage = fopen('../'.$projet.'/php/view/'.$nomClass.'Action.php', 'w');
-fputs($affichage ,genereAction($nomClass));
+    require 'DbConnect.class.php';
+    DbConnect::init($nomBDD); // ne pas oublier de changer les identifiants dans le fichier de connexion si besoin
+    $db= DbConnect::getDb(); // on se connnecte à la base de données
 
+for($i=0;$i<$nbTable;$i++)
+{
+    $nomTable= $_POST["table".$i];
+    $idTable= $_POST["idTable".$i];
+    $nomClass= $_POST["classe".$i];  
+    // on met une majuscule à $nomClass au cas où et on appelle la fonction de création
+    $nomClass = ucfirst($nomClass);
+    
+    $affichage = fopen('../'.$projet.'/php/view/'.$nomClass.'Liste.php', 'w');
+    fputs($affichage ,genereListe($nomClass));
 
-require 'DbConnect.class.php';
-DbConnect::init($nomBDD); // ne pas oublier de changer les identifiants dans le fichier de connexion si besoin
-$db = DbConnect::getDb(); // on se connnecte à la base de données
+    $affichage = fopen('../'.$projet.'/php/view/'.$nomClass.'Action.php', 'w');
+    fputs($affichage ,genereAction($nomClass));
 
-// on va chercher la liste des colonnes de la table
-$q = $db->query('SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = "' . $nomBDD . '" AND TABLE_NAME = "' . $nomTable . '"');
-// on boucle puis on retire la dernière valeur vide
-while ($listeColonnes[] = $q->fetch(PDO::FETCH_ASSOC)["COLUMN_NAME"]) {}
-unset($listeColonnes[array_key_last($listeColonnes)]);
+    $affichage = fopen('../'.$projet.'/php/view/'.$nomClass.'Form.php', 'w');
+    fputs($affichage ,genereForm($class));
 
-generation($nomTable, $nomClass, $idTable, $listeColonnes,$projet);
+    $affichage = fopen('../'.$projet.'/index.php', 'w');
+    fputs($affichage ,genereIndex($class));
+
+    // on va chercher la liste des colonnes de la table
+    $q = $db->query('SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = "' . $nomBDD . '" AND TABLE_NAME = "' . $nomTable .'" ORDER BY ORDINAL_POSITION;');
+    // on boucle puis on retire la dernière valeur vide
+    while ($listeColonnes[] = $q->fetch(PDO::FETCH_ASSOC)["COLUMN_NAME"]) {}
+    unset($listeColonnes[array_key_last($listeColonnes)]);
+
+    generation($nomTable, $nomClass, $idTable, $listeColonnes,$projet);
+    unset($listeColonnes);
+}
+
 //suprime le DbConnect qui sert au programme
 unlink('DbConnect.Class.php');
 
-header('Location:confirmation.php');
+header('Location:index.php?act=confirmation');
 // ====================================================================//
 // ============================GENERATION==============================//
 // ====================================================================//
@@ -547,9 +562,9 @@ function genereListe($class)
     $liste'.$class.' = '.$class.'Manager::getList();
     foreach ($liste'.$class.' as $'.$class.')
     {
-    $affichage .= '."'".'<div class="contenuListe">
-    <a href="index.php?action='.$class.'Form&id='."'".'.$'.$class.'->getId'.$class.'().'."'".'&act=modif">   <div class="contenu"> MODIF </div></a>
-    <a href="index.php?action='.$class.'Form&id='."'".'.$'.$class.'->getId'.$class.'().'."'".'&act=suppr">   <div class="contenu"> SUPPR </div></a>
+        $affichage .= '."'".'<div class="contenuListe">
+        <a href="index.php?action='.$class.'Form&id='."'".'.$'.$class.'->getId'.$class.'().'."'".'&act=modif">   <div class="contenu"> MODIF </div></a>
+        <a href="index.php?action='.$class.'Form&id='."'".'.$'.$class.'->getId'.$class.'().'."'".'&act=suppr">   <div class="contenu"> SUPPR </div></a>
         <div class="contenu">'."'".'.$'.$class.'->getNom() . '."'".'</div>
         <div class="contenu">'."'".'.$'.$class.'->getPrenom() .'."'".'</div>
         <div class="contenu">'."'".'.$'.$class.'->getDateNaissance() .'."'".'</div>
@@ -592,11 +607,125 @@ function genereAction($class)
     ';
     return $affichage;
 }
-function genereForm()
+function genereForm($class)
 {
     $affichage='
-    
-    ';
+    <?php
+
+    //on recupere l\'action à mener (ajout/modif/suppression)
+    $act = $_GET["act"];
+    if ($act != "ajout")
+    {
+    // on recupere l\'id de la '.$class.' à modifier ou à supprimer via le $_GET
+        $id = $_GET["id"];
+        $p = '.$class.'Manager::getById($id);
+    }
+    ?>
+    <div class="formulaire center">
+        <form action="index.php?action='.$class.'Action&act=<?php echo $act; ?>" method="POST">
+            <fieldset>
+                <legend><i class="fas fa-address-card"></i>Vos coordonnées</legend>
+                <label for="nom">Votre nom*</label>
+                <!--on renseigne la value dans l\'input si on est en modif ou suppr -->
+                <input type="text" name="nom" id="nom" maxlength="30" required <?php if ($act != "ajout")
+    {
+        echo '."'".'value ="'."'".' . $p->getNom() . '."'".'"'."'".';
+    }
+    ?> >
+                <!--  on met l\'id dans un champ caché pour qu\'il soit renseigné dans le $_POST au moment de la validation du formulaire  -->
+                <?php if ($act != "ajout")
+    {
+        echo'."'".'<input type="text" name="id'.$class.'" id="id'.$class.'" hidden value ="'."'".' . $p->getId'.$class.'() . '."'".'" >'."'".';
+    }
+    ?>
+
+                <label for="prenom">Votre prenom*</label>
+                <input type="text" name="prenom" id="prenom"required <?php if ($act != "ajout")
+    {
+        echo'."'". 'value ="'."'".' . $p->getPrenom() . '."'".'"'."'".';
+    }
+    ?> >
+
+                <label for="dateNaissance">Votre date de naissance*</label>
+                <input type="date" name="dateNaissance" id="dateNaissance"required <?php if ($act != "ajout")
+    {
+        echo'."'".'value ="'."'".' . $p->getDateNaissance() . '."'".'"'."'".';
+    }
+    ?> >
+
+            </fieldset>
+                <div class="btn">
+                    <button type="submit" name="modifier"> <?php if ($act == "ajout")
+    {
+        echo'."'". 'Ajouter'."'".';
+    }
+    elseif ($act == "modif")
+    {
+        echo'."'". 'Modifier'."'".';
+    }
+    else
+    {
+        echo "Supprimer";
+    }
+    ?></button>
+                <a href="index.php?action=accueil">    <button type="reset" name="annuler" class="annule"> Annuler</button></a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+        ';
     return $affichage;
 }
 
+function genereIndex($class){
+    $affichage='
+    <?php
+    function ChargerClasse($classe)
+    {
+        if (file_exists("PHP/controller/" . $classe . ".Class.php"))
+        {
+            require "PHP/controller/" . $classe . ".Class.php";
+        }
+
+        if (file_exists("PHP/model/" . $classe . ".Class.php"))
+        {
+            require "PHP/model/" . $classe . ".Class.php";
+        }
+
+    }
+    spl_autoload_register("ChargerClasse");
+
+    DbConnect::init();
+
+    function AfficherPage($nom)
+    {
+        include "php/view/head.php";
+        include "php/view/" . $nom . ".php";
+        include "php/view/footer.php";
+    }
+    if (isset($_GET["action"]))
+    {
+        switch ($_GET["action"])
+        {
+            case "confirmation":
+                AfficherPage("confirmation");
+                break;
+            case "accueil":
+                AfficherPage("liste");
+                break;
+            case "'.$class.'Form":
+                AfficherPage("'.$class.'Form");
+                break;
+            case "'.$class.'Action":
+                AfficherPage("'.$class.'Action");
+                break;
+        }
+    }
+    else
+    {
+        AfficherPage("liste");
+    }
+
+    ';
+    return $affichage;
+}

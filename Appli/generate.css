@@ -29,7 +29,7 @@ header{
 }
 .contenu{
     display: flex;
-    margin-top: 30vh;
+    margin-top: 10vh;
 }
 .donnee{
     display: flex;
@@ -50,6 +50,9 @@ input{
 
 .bas{
     display: flex;
+}
+.basDePage{
+    margin-bottom: 20vh;
 }
 .bouton{
     display: flex;
@@ -95,10 +98,25 @@ input{
 .borderTop{
     border-top: 3px rgb(30, 214, 30) solid;
 }
-.button{
+#bouton{
     background-color: rgb(30, 214, 30);
 }
-.button:hover{
+#bouton:hover{
     background-color: rgb(165, 255, 19);
     cursor: pointer;
 }
+
+.validerNombre{
+    margin-left: 1vw;
+    background-color: rgb(30, 214, 30);
+    display: flex;
+    justify-content: center;
+}
+.validerNombre:hover{
+    background-color: rgb(165, 255, 19);
+    cursor: pointer;
+}
+
+
+
+
