@@ -1,12 +1,37 @@
 .header {
-    background: #377bb5;
+    background: rgb(46, 46, 46);
+    max-height: 5vh;
     }
     #navigation-principale li {
     position: relative;
-    display: inline-block;
+    display: flex;
     padding: 10px;
     font-weight: 500;
     }
+    .menu{
+        display: flex;
+        justify-content: center;
+    }
     #navigation-principale li a {
     color: #fff;
+    }
+    .sub-menu{
+       display: flex;
+       flex-direction: column;
+       display: none;
+    }
+    .menu-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-item:hover{
+        background-color: red;
+        box-shadow: rgb(129, 7, 7) 2px 2px 2px;
+    }
+    .menu-item:hover .sub-menu
+    {
+            display: block;  
+    }
+    .menu-item-object-page:hover{
+        border: black 1px solid
     }
