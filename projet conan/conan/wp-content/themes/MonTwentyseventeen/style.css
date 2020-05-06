@@ -20,7 +20,7 @@ Version: 0.1.0
 	color:red;
 }
 .navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
-    color: white;
+    color: rgb(243, 182, 67);
 }
 .menu-item:hover{
 		background-color:#575757;
