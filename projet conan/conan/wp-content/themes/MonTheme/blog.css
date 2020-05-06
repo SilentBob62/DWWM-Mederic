@@ -15,7 +15,6 @@ body{
     padding: 1vw;
 }
 .header{
-
     background-image: url(../../../../images/imageBoite.jpg);
     background-size: cover;
     min-height: 100vh;
@@ -34,16 +33,37 @@ body{
 .menu-item-type-custom{
     width: 15vw;
     height: 5vh;
-    padding-top: 2vh;
+    padding-top: 1vh;
+    text-align: center;
+}
+.menu-item:hover{
+    background-color: rgb(248, 204, 60);
+    cursor: pointer;
+}
+.menu-item-type-custom:hover .sub-menu{
+    display: block;
 }
 .blog-header{
-position: absolute;
-left: 10vw;
-top: 80vh;
+    position: absolute;
+    left: 10vw;
+    top: 80vh;
 }
 .blog-title{
     color: slategray;
 }
 .sub-menu{
     display: none;
+    background-color: rgb(61, 53, 53);
+    box-shadow: 2px 2px black;
+    margin-top: 2vh;
+}
+.menu-item-type-post_type{
+    padding-top: 1vh;
+}
+.menu-item-type-post_type:hover{
+    background-color:rgb(248, 204, 60); ;
+}
+a, ul{
+    list-style:none;
+    color: white;
 }
