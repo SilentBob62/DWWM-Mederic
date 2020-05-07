@@ -59,6 +59,8 @@ body{
 }
 .menu-item-type-post_type{
     padding-top: 1vh;
+    width: 15vw;
+    text-align: center;
 }
 .menu-item-type-post_type:hover{
     background-color:rgb(248, 204, 60); ;
