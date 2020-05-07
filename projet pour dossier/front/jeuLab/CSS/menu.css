@@ -1,0 +1,90 @@
+body,
+html{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background-image: url(../image/labo2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+    display: flex;
+}
+.black{
+    background-color: black;
+}
+.blackTransparent{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.colonne{
+    display: flex;
+    flex-direction: column;
+}
+.border{
+    border-radius: 10px;
+    border: 3px solid red;
+}
+.ecriture{
+    color:red
+}
+.ecritureVert{
+    color: greenyellow;
+}
+.content{
+display: flex;
+}
+.titreJeu{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    padding: 5vh 0;
+    margin-bottom: 5vh;
+}
+.espace{
+    flex: 1;
+}
+
+.page{
+    padding: 5vh 2vw;
+}
+.ligne{
+    display: flex;
+}
+label{
+    flex: 1;
+    padding-left: 1vw;
+}
+input{
+    flex: 3;
+}
+.message{
+    flex: 1;
+}
+.ligneValider{
+    padding-top: 5vh;
+}
+footer{
+    display: flex;
+}
+.logoSignature{
+
+}
+.signature{
+
+}
+footer{
+    display: flex;
+    background-color: rgb(139, 0, 0);
+    justify-content: center;
+    position: fixed;
+    top: 98vh;
+    width: 100vw;
+}
+button{
+    background-color: rgb(131, 122, 1);
+    color: white;
+}
+button:hover{
+    background-color: red;
+    cursor: pointer;
+}

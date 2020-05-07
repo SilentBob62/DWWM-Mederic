@@ -1,0 +1,71 @@
+
+.site-info{
+	display: none;	
+}
+.navigation-top{
+	background-color: black;
+}
+.icon{
+	color: red;
+}
+.menu-item a{
+	color:red;
+}
+.navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
+    color: white;
+}
+.menu-item:hover{
+		background-color:#575757;
+}
+.intro{
+	background-color:#FFD782;
+	border: 1px solid #F9763E;
+	border-radius:10px;
+	padding:1vw;
+}
+.encadrer{
+	background-color:#FFD782;
+	border: 1px solid #F9763E;
+	border-radius:10px;
+	padding:1vw;
+	padding-left:3vw;
+}
+
+.lienExterne{
+	color: red;
+	size:bold;
+}
+.bordure{
+	padding-top:0.5vw;
+	padding-left:0.5vw;
+	padding-right:0.5vw;
+	border:2px solid black;
+	border-radius:10px;
+}
+.ecritureRouge{
+	color:red;
+}
+.panel-content{
+	background-color:#484848;
+}
+.site-content{
+	background-color:#484848;
+}
+.single-featured-image-header{
+	background-color:#484848;
+}
+img{
+	border: 2px red solid;
+}
+
+.wp-block-image{
+	display:flex;
+	justify-content:center;
+}
+.site-footer{
+	background-color:#696969;
+	color:white;
+}
+.titreInfo{
+	color:white;
+}

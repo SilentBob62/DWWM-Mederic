@@ -1,0 +1,122 @@
+.vert{
+    color: rgb(30, 214, 30);
+}
+.black{
+    background-color: black;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(126, 124, 124);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15vw;
+    width: 70vw;
+    margin-top: 22vh;
+    box-shadow: black 2px 2px 2px;
+}
+.contenu{
+    display: flex;
+    margin-top: 10vh;
+}
+.donnee{
+    display: flex;
+    margin: 1vw;
+}
+label{
+    flex: 0.2;
+}
+input{
+    flex: 1;
+}
+.message{
+    flex: 0.2;
+}
+.blackTransparent{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bas{
+    display: flex;
+}
+.basDePage{
+    margin-bottom: 20vh;
+}
+.bouton{
+    display: flex;
+    flex: 1;
+    margin-bottom: 1vw;
+}
+.piedDePage{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signature{
+    flex: 9;
+    display: flex;
+    justify-content: center;
+}
+.espace{
+    flex: 2;
+}
+.titre{
+    flex: 9;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    flex: 1;
+}
+.confirm{
+    flex: 1;
+}
+.border{
+    border: 3px rgb(30, 214, 30) solid;
+    border-radius: 10px;
+}
+.borderBottom{
+    border-bottom: 3px rgb(30, 214, 30) solid;
+}
+.borderTop{
+    border-top: 3px rgb(30, 214, 30) solid;
+}
+#bouton{
+    background-color: rgb(30, 214, 30);
+}
+#bouton:hover{
+    background-color: rgb(165, 255, 19);
+    cursor: pointer;
+}
+
+.validerNombre{
+    margin-left: 1vw;
+    background-color: rgb(30, 214, 30);
+    display: flex;
+    justify-content: center;
+}
+.validerNombre:hover{
+    background-color: rgb(165, 255, 19);
+    cursor: pointer;
+}
+
+
+
+
