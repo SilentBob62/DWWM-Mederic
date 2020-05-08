@@ -65,11 +65,12 @@ body {
 .espace{
     flex: 1;
 }
+/*couleur*/
 .gray{
     background-color: rgb(182, 182, 182);
 }
 .black {
-    background: black;
+    background: rgb(44, 40, 40);
 }
 
 .red {
@@ -194,7 +195,7 @@ body {
     box-shadow: black 2px 2px 2px;
 }
 /****************************Key********************************************/
-.key{
+#key1{
     top: 55vh;
     left: 56vw;
     position: absolute;
@@ -512,7 +513,7 @@ img{
     width: 2vw; 
     height: 15vh;
 }
-
+/*piece*/
 .piece1{
     top: 55vh;
     left: 24vw;
@@ -550,7 +551,7 @@ img{
     color: coral;
 }
 
-.porte {
+.porte1 {
     top: 3vh;
     left: 56vw;
     width: 5vw;

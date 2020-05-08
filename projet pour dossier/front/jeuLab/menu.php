@@ -1,5 +1,6 @@
 
-<div class="header">
+<?php
+echo'<div class="header">
     <div class="espace"></div>
     <div class="titreJeu border ecriture blackTransparent"><h1>SILENT LAB</h1></div>
     <div class="espace"></div>
@@ -17,4 +18,5 @@
                     <div class="espace"></div>
                 </div>
             </form>
-        </div>
+        </div>';
+

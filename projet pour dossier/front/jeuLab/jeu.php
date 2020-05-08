@@ -2,7 +2,7 @@
 
 echo'
 
-<body class="gray">
+<body id="niveau1">
     <div class="terrain">
         <img src="image/solMarquageDegat.png" alt="" srcset="">
         <div id="player">
@@ -85,38 +85,18 @@ echo'
         </div>
 
         <div id="key1" class="obstacle key">
-            <div class="rond silver">
-                <div class="rondCentre black"></div>
+            <div id="rond1" class="rond silver">
+                <div id="rondNoir1" class="rondCentre black"></div>
             </div>
-            <div class="tige silver"></div>
+            <div id="tige1" class="tige silver"></div>
         </div>
 
-        <div id="" class="obstacle bois porte">
+        <div id="" class="obstacle bois porte1">
             <img src="image/porte.png" alt="" srcset="">
         </div>
-    </div>
-    <div class="menu gray">
-        <div class="espace"></div>
-        <div class="nomPerso">'.$_POST["nom"].'</div>
-        <div class="espace"></div>
-        <div class="vie">
-            <div class="baton"></div>
-            <div class="baton"></div>
-            <div class="baton"></div>
-        </div>
-        <div class="espace"></div>
-        <div class="menuOr">
-            <div class="pieceMenu or">PO</div>
-            <div id="nombrePiece" class="nombrePiece">0</div>
-        </div>
-        <div class="espace"></div>
-        <div class="keyMenu">
-            <div id="rondInvisible" class="rondInvisible">
-                    <div id="rondCentreInvisible" class="rondCentreInvisible"></div>
-                </div>
-                <div id="tigeInvisible" class="tigeInvisible"></div>
-            </div>
-        </div>
-        <div class="espace"></div>
-    </div>
-    <script src="main.js"></script>';
+    </div>';
+    
+     $_SESSION['nom']=$_POST["nom"];
+     $_SESSION['piece']=$piece;
+    
+     session_start ();

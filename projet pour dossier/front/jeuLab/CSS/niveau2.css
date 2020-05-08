@@ -1,0 +1,471 @@
+/* ============================================================= Joueur */
+
+#playerNiveau2 {
+    position: absolute;
+    top: 8vh;
+    left: 60vw;
+    width: 4vw;
+    height: 6vh;
+    background-color: rgb(128, 253, 128);
+    border-radius: 30px;
+    margin: 0;
+    padding: 0;
+    box-shadow: black 2px 2px 2px;
+    display: flex;
+    flex-direction: column;
+}
+.hautPerso{
+    flex: 1;
+    display: flex;
+}
+.basPerso{
+    flex: 1;
+}
+.orbite{
+    position: relative;
+    top: 0.5vw;
+    width: 2vw;
+    height: 2vw;
+    background-color: rgb(91, 219, 91);
+    border-radius: 15px;
+    box-shadow: black 2px 2px 2px;
+}
+.oeil{
+    border-radius: 50px;
+    border: black solid 2px;
+    width: 1vw;
+    height: 1vw;
+    position: relative;
+    top: 0.25vw;
+    left: 0.25vw;
+    background-color: rgb(0, 0, 0);
+    box-shadow: black 2px 2px 2px;
+}
+.pupille{
+    background-color: rgb(103, 158, 180);
+    border-radius: 50px;
+    position: relative;
+    width: 0.5vw;
+    height: 0.5vw;
+    top: 0.25vw;
+    left: 0.25vw;
+    box-shadow: black 2px 2px 2px;
+}
+.espace{
+    width: 0.5vw;
+}
+.bouche{
+    top:1vw;
+    left:1.5vw;
+    position: relative;
+    background-color: rgb(245, 133, 133);
+    width: 1vw;
+    height: 0.2vw;
+    border: rgb(105, 1, 1) 1px solid;
+    border-radius: 15px;
+    box-shadow: black 2px 2px 2px;
+}
+/****************************Key********************************************/
+#key2{
+    top: 18vh;
+    left: 19vw;
+    position: absolute;
+    display: flex;
+
+}
+.rond{
+    border: black 1px solid;
+    border-radius: 50px;
+    width: 2vw; 
+    height: 3vh;
+}
+.rondCentre{
+    border-radius: 50px;
+    width: 1vw; 
+    height: 1.5vh;
+}
+.tige{
+    width: 2vw; 
+    height: 1vh;
+    border: black 1px solid;
+    position: relative;
+    margin-top: 1vh;
+}
+.tige2{
+    width: 2vw; 
+    height: 1vh;
+    border: black 1px solid;
+    position: relative;
+}
+/*piece*/
+.piece5{
+    top: 79vh;
+    left: 3vw;
+    width: 2vw;
+    height: 3vh;
+    border-radius: 50px;
+    border: rgb(255, 150, 80) 2px solid;
+    color: coral;
+}
+.piece6{
+    top: 7vh;
+    left: 39vw;
+    width: 2vw;
+    height: 3vh;
+    border-radius: 50px;
+    border: rgb(255, 150, 80) 2px solid;
+    color: coral;
+}
+.piece7{
+    top: 60vh;
+    left: 87vw;
+    width: 2vw;
+    height: 3vh;
+    border-radius: 50px;
+    border: rgb(255, 150, 80) 2px solid;
+    color: coral;
+}
+.piece8{
+    top: 13vh;
+    left: 76vw;
+    width: 2vw;
+    height: 3vh;
+    border-radius: 50px;
+    border: rgb(255, 150, 80) 2px solid;
+    color: coral;
+
+}
+/*porte*/
+.porte2 {
+    top: 1.2vh;
+    left: 90vw;
+    width: 5vw;
+    height: 10vh;
+    border-radius: 0px;
+    border: black 1px solid;
+}
+/*monstre*/
+.square20{
+    top: 36vh;
+    left: 20vw;
+    width: 5vw;
+    height: 7vh;
+}
+.square21{
+    top: 43vh;
+    left: 51vw;
+    width: 5vw;
+    height: 7vh;
+}
+.square22{
+    top: 27vh;
+    left: 73vw;
+    width: 5vw;
+    height: 7vh;
+}
+.square23{
+    top: 63vh;
+    left: 54.7vw;
+    width: 5vw;
+    height: 7vh;
+}
+.square24{
+    top: 22vh;
+    left: 31.2vw;
+    width: 5vw;
+    height: 7vh;
+}
+
+.square25{
+    top: 77.8vh;
+    left: 93.5vw;
+    width: 5vw;
+    height: 7vh;
+}
+/*decor*/
+.line20{
+    top: 0vh;
+    left: 0vw;
+    height: 6vh;
+    width: 100vw;
+}
+.line21{
+    top: 0vh;
+    left: 0vw;
+    height: 90vh;
+    width: 1vw;
+}
+.line22{
+    top: 85vh;
+    left: 0vw;
+    height: 5vh;
+    width: 100vw;
+}
+.line23{
+    top: 0vh;
+    left: 99vw;
+    height: 90vh;
+    width: 1vw;
+}
+.line24{
+    top: 0vh;
+    left: 0vw;
+    height: 18vh;
+    width: 31vw;
+}
+.line25{
+    top: 0vh;
+    left: 69vw;
+    height: 10vh;
+    width: 31vw;
+}
+.line26{
+    top: 0vh;
+    left: 069vw;
+    height: 43vh;
+    width: 4vw;
+}
+.line27{
+    top: 15vh;
+    left: 26vw;
+    height: 30vh;
+    width: 5vw;
+}
+.line28{
+    top: 44vh;
+    left: 10vw;
+    height: 15vh;
+    width: 30vw;
+}
+.line29{
+    top: 55vh;
+    left: 60vw;
+    height: 18vh;
+    width: 25vw;
+}
+.line30{
+    top: 70vh;
+    left: 0vw;
+    height: 8vh;
+    width: 31vw;
+}
+.line31{
+    top: 35vh;
+    left: 50vw;
+    height: 8vh;
+    width: 31vw;
+}
+.line32{
+    top: 0vh;
+    left: 50vw;
+    height: 20vh;
+    width: 5vw;
+}
+.line33{
+    top: 0vh;
+    left: 95vw;
+    height: 25vh;
+    width: 5vw;
+}
+.line34{
+    width: 7.5vw;
+    height: 5.6vh;
+    top: 28vh;
+    left: 11.1vw;
+}
+.line35{
+    top: 16vh;
+    left: 6vw;
+    height: 5vh;
+    width: 10.3vw;
+}
+.line36{
+    top: 52vh;
+    left: 72vw;
+    height: 10vh;
+    width: 10vw;
+}
+.line37{
+    top: 55vh;
+    left: 83vw;
+    height: 3vh;
+    width: 17vw;
+}
+/*mur*/
+#mur20{
+    width: 24.9vw;
+    height: 5vh;
+    top: 12.5vh;
+    left: 1vw;
+}
+#mur21{
+    width: 28.8vw;
+    height: 5vh;
+    top: 53.6vh;
+    left: 10.6vw;
+}
+#mur22{
+    width: 29.3vw;
+    height: 5vh;
+    top: 72.5vh;
+    left: 1vw;
+}
+#mur23{
+    width: 24vw;
+    height: 5vh;
+    top: 67.4vh;
+    left: 60.4vw;
+}
+#mur24{
+    width: 13.9vw;
+    height: 5vh;
+    top: .5vh;
+    left: 55vw;
+}
+#mur25{
+    width: 4.3vw;
+    height: 5vh;
+    top: 14.4vh;
+    left: 50.3vw;
+}
+#mur26{
+    width: 30.3vw;
+    height: 5vh;
+    top: 37.5vh;
+    left: 50.3vw;
+}
+#mur27{
+    width: 19vw;
+    height: 5vh;
+    top: .5vh;
+    left: 31vw;
+}
+#mur28{
+    width: 16.8vw;
+    height: 5vh;
+    top: 4.5vh;
+    left: 73vw;
+}
+#mur29{
+    width: 3.6vw;
+    height: 5vh;
+    top: 19.5vh;
+    left: 95.3vw;
+}
+#mur30{
+    width: 24.9vw;
+    height: 5vh;
+    top: 12.5vh;
+    left: 1vw;
+}
+#mur31{
+    width: 19vw;
+    height: 3vh;
+    top: 11vh;
+    left: 31vw;
+    box-shadow: 0px 2px black;
+}
+#mur32{
+    width: 5vw;
+    height: 5vh;
+    top: 15.5vh;
+    left: 6.1vw;
+}
+#mur33{
+    width: 7.5vw;
+    height: 5.6vh;
+    top: 28vh;
+    left: 11.1vw;
+    border-radius: 10px;
+}
+#mur34{
+    width: 19vw;
+    height: 3vh;
+    top: 5vh;
+    left: 31vw;
+    box-shadow: 0px 2px black;
+}
+#mur35{
+    width: 19vw;
+    height: 3vh;
+    top: 30vh;
+    left: 31vw;
+    box-shadow: 0px 2px black;
+}
+#mur36{
+    width: 19vw;
+    height: 3vh;
+    top: 30vh;
+    left: 50vw;
+    box-shadow: 0px 2px black;
+}
+#mur37{
+    width: 5vw;
+    height: 5vh;
+    top: 15.5vh;
+    left: 11.1vw;
+}
+#mur38{
+    width: 2vw;
+    height: 18vh;
+    top: 67vh;
+    left: 65vw;
+    box-shadow: 0px 2px 0px 2px black;
+}
+#mur39{
+    width: 2vw;
+    height: 13vh;
+    top: 72vh;
+    left: 22vw;
+    box-shadow: 0px 2px 0px 2px black;
+}
+#mur40{
+    width: 2vw;
+    height: 13vh;
+    top: 72vh;
+    left: 17vw;
+    box-shadow: 0px 2px 0px 2px black;
+}
+#mur41{
+    width: 14vw;
+    height: 3vh;
+    top: 55.2vh;
+    left: 85vw;
+    box-shadow: 0px 2px black;
+}
+#mur42{
+    width: 1vw;
+    height: 3vh;
+    top: 68.2vh;
+    left: 61vw;
+}
+#mur43{
+    width: 1vw;
+    height: 3vh;
+    top: 73.2vh;
+    left: 29vw;
+}
+#mur44{
+    width: 1vw;
+    height: 3vh;
+    top: 38.2vh;
+    left: 79vw;
+}
+#mur45{
+    width: 1vw;
+    height: 3vh;
+    top: 15.2vh;
+    left: 51vw;
+}
+#mur46{
+    width: 1.5vw;
+    height: 3vh;
+    top: 14.8vh;
+    left: 24vw;
+}
+#mur47{
+    width: 1.5vw;
+    height: 3vh;
+    top: 14.8vh;
+    left: 2vw;
+}

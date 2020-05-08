@@ -67,8 +67,15 @@ Idées d'améliorations :
 
 function move(pX, pY) {
     var move = true;
-
-    var player = document.getElementById("player"); // joueur
+    body=document.getElementsByTagName("body")[0];
+    if(body.id=="niveau1")
+    {
+        var player = document.getElementById("player"); // joueur
+    }
+    else if (body.id=="niveau2")
+    {
+        var player = document.getElementById("playerNiveau2"); // joueur
+    }
     var stylePlayer = window.getComputedStyle(player, null); // css du joueur
     var pT = parseInt(stylePlayer.top); // joueur position X
     var pL = parseInt(stylePlayer.left); // joueur position Y
@@ -114,7 +121,8 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color,id) {
                 baton.setAttribute("class","invisibleBaton");
                 invisibleBaton=document.getElementsByClassName("invisibleBaton");
                 alert("Aie!!!");
-                if (invisibleBaton.length==3)alert("GAME OVER!!!");
+                if (invisibleBaton.length==3) document.location.href="index.php?act=gameover";
+                // alert("GAME OVER!!!");
                 // si on touche un obstacle rouge
                 break;
             case "rgb(0, 0, 255)":
@@ -122,7 +130,8 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color,id) {
                 baton.setAttribute("class","invisibleBaton");
                 invisibleBaton=document.getElementsByClassName("invisibleBaton");
                 alert("Aie!!!");
-                if (invisibleBaton.length==3)alert("GAME OVER!!!");
+                if (invisibleBaton.length==3) document.location.href="index.php?act=gameover";
+                // alert("GAME OVER!!!");
                 // si on touche un obstacle bleu
                 break;
             case "rgb(180, 25, 25)":
@@ -155,21 +164,7 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color,id) {
                 }
                 }
                 break;
-            // case "rgb(239, 216, 7)":
-            //     or=document.getElementsByClassName("or");
-            //     or[0].setAttribute("class","invisible");
-            //     break;
-        //     case "rgb(192, 192, 192)":
-        //             key=document.getElementsByClassName("key");
-        //             key[0].setAttribute("class","invisible"); 
-        //             rond=document.getElementsByClassName("rond");
-        //             rond[0].setAttribute("class","invisible"); 
-        //             tige=document.getElementsByClassName("tige");
-        //             tige[0].setAttribute("class","invisible");  
-        //             rondCentre=document.getElementsByClassName("rondCentre");
-        //             rondCentre[0].setAttribute("class","invisible") 
-        //         break;
-           }
+        }
         switch (id) {
             case "piece1":
                 piece1=document.getElementById("piece1");
@@ -199,22 +194,81 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color,id) {
                 nombrePiece=parseInt(nombrePiece)+1;
                 document.getElementById("nombrePiece").innerHTML=nombrePiece;
             break;
+            case "piece5":
+                piece5=document.getElementById("piece5");
+                piece5.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+1;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
+            case "piece6":
+                piece6=document.getElementById("piece6");
+                piece6.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+1;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
+            case "piece7":
+                piece7=document.getElementById("piece7");
+                piece7.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+1;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
+            case "piece8":
+                piece8=document.getElementById("piece8");
+                piece8.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+1;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
             case "key1":
                 key1=document.getElementById("key1");
                 key1.setAttribute("class","invisible");
+                rond1=document.getElementById("rond1");
+                rond1.setAttribute("class","invisible");
+                rondNoir1=document.getElementById("rondNoir1");
+                rondNoir1.setAttribute("class","invisible");
+                tige1=document.getElementById("tige1");
+                tige1.setAttribute("class","invisible");
                 rondInvisible=document.getElementById("rondInvisible");
                 rondInvisible.setAttribute("class","rond silver");
                 rondCentreInvisible=document.getElementById("rondCentreInvisible");
                 rondCentreInvisible.setAttribute("class","rondCentre black");
                 tigeInvisible=document.getElementById("tigeInvisible");
                 tigeInvisible.setAttribute("class","tige2 silver");
-                porte=document.getElementsByClassName("porte")[0];
-                porte.setAttribute("id","porte");
-                porte.setAttribute("class","obstacle porte");
+                porte1=document.getElementsByClassName("porte1")[0];
+                porte1.setAttribute("id","porte1");
+                porte1.setAttribute("class","obstacle porte1");
             break;
-            case "porte":
+            case "key2":
+                key2=document.getElementById("key2");
+                key2.setAttribute("class","invisible");
+                rond2=document.getElementById("rond2");
+                rond2.setAttribute("class","invisible");
+                rondNoir2=document.getElementById("rondNoir2");
+                rondNoir2.setAttribute("class","invisible");
+                tige2=document.getElementById("tige2");
+                tige2.setAttribute("class","invisible");
+                rondInvisible=document.getElementById("rondInvisible");
+                rondInvisible.setAttribute("class","rond silver");
+                rondCentreInvisible=document.getElementById("rondCentreInvisible");
+                rondCentreInvisible.setAttribute("class","rondCentre black");
+                tigeInvisible=document.getElementById("tigeInvisible");
+                tigeInvisible.setAttribute("class","tige2 silver");
+                porte2=document.getElementsByClassName("porte2")[0];
+                porte2.setAttribute("id","porte2");
+                porte2.setAttribute("class","obstacle porte2");
+            break;
+            case "porte1":
+                // si on touche l'arrivée, c'est gagné
+                // alert("Bien joué, c'est gagné !"); 
+                document.location.href="index.php?act=niveau2";
+            break;  
+            case "porte2":
                 // si on touche l'arrivée, c'est gagné
                 alert("Bien joué, c'est gagné !"); 
+            break;    
         }
         // playSound("soundCollision", 1, false);
         return false;

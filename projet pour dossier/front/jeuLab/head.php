@@ -5,4 +5,5 @@ echo'<head>
     
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/niveau2.css">
 </head>';
