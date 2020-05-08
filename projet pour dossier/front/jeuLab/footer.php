@@ -2,7 +2,7 @@
 echo'
 <div class="menu gray">
         <div class="espace"></div>
-        <div class="nomPerso">'.$_SESSION["nom"].'</div>
+        <div class="nomPerso">'.$nom.'</div>
         <div class="espace"></div>
         <div class="vie">
             <div class="baton"></div>
@@ -12,7 +12,7 @@ echo'
         <div class="espace"></div>
         <div class="menuOr">
             <div class="pieceMenu or">PO</div>
-            <div id="nombrePiece" class="nombrePiece">'.$piece.'</div>
+            <div id="nombrePiece" name="piece" class="nombrePiece">'.$piece.'</div>
         </div>
         <div class="espace"></div>
         <div class="keyMenu">

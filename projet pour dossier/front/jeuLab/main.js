@@ -347,5 +347,3 @@ blockRouge = document.getElementsByClassName("red");
 for (i = 1; i < 6; i++) {
     blockRouge[i].style.display = "none";
 }
-
-

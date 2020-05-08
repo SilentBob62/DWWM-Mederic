@@ -3,10 +3,17 @@ html{
     margin: 0;
     padding: 0;
     overflow-y: hidden;
-    background-image: url(../image/labo2.png);
+    background-color: black;
+}
+.fontEcran{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background-image: url(../image/fondBleu.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .header{
     display: flex;
 }

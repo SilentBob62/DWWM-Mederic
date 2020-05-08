@@ -1,5 +1,6 @@
 <?php
 
+$_SESSION['nom']=$_POST["nom"];
 echo'
 
 <body id="niveau1">
@@ -96,7 +97,3 @@ echo'
         </div>
     </div>';
     
-     $_SESSION['nom']=$_POST["nom"];
-     $_SESSION['piece']=$piece;
-    
-     session_start ();
