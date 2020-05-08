@@ -117,11 +117,15 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color,id) {
                 // si on touche un mur
                 break;
             case "rgb(255, 0, 0)":
+
                 baton=document.getElementsByClassName("baton")[0];
                 baton.setAttribute("class","invisibleBaton");
                 invisibleBaton=document.getElementsByClassName("invisibleBaton");
-                alert("Aie!!!");
+                // setTimeout(player.style.backgroundColor="red", 1000); 
+                // alert("Aie!!!");
                 if (invisibleBaton.length==3) document.location.href="index.php?act=gameover";
+                degat();
+                
                 // alert("GAME OVER!!!");
                 // si on touche un obstacle rouge
                 break;
@@ -129,8 +133,9 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color,id) {
                 baton=document.getElementsByClassName("baton")[0];
                 baton.setAttribute("class","invisibleBaton");
                 invisibleBaton=document.getElementsByClassName("invisibleBaton");
-                alert("Aie!!!");
+                // alert("Aie!!!");
                 if (invisibleBaton.length==3) document.location.href="index.php?act=gameover";
+                degat()
                 // alert("GAME OVER!!!");
                 // si on touche un obstacle bleu
                 break;
@@ -275,6 +280,27 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color,id) {
     }
     return true;
 }
+//===>geestion du deplacement après degats
+function degat()
+{
+    var speed2 = 20; // vitesse de déplacement
+    var event = event || window.event, // pour la compatibilite avec tous les navigateurs
+    keyCode = event.keyCode;
+    switch (keyCode) {
+        case 37: // gauche(100)
+            move(speed2, 0);
+            break;
+        case 38: // haut(104)
+            move(0, speed2);
+            break;
+        case 39: // droite(102)
+            move(-speed2, 0);
+            break;
+            case 40: // bas(98)
+            move(0, -speed2)
+            break;
+                    }
+}
 
 // ===> gestion des limites de l'écran
 
@@ -339,7 +365,6 @@ document.addEventListener('keydown', function (event) {
         //     break;
     }
 });
-
 
 blockRouge = document.getElementsByClassName("red");
 

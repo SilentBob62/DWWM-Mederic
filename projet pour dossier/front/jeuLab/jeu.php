@@ -46,11 +46,11 @@ echo'
         <div class="obstacle black line18">&nbsp;</div>
 
         <div class="obstacle redFonce   "><img id="imageBoutonRouge" src="image/interrupteurRouge.png" alt="" srcset=""> </div>
-        <div class="obstacle red square2"><img id="imagePorteRouge" src="image/porteRouge.png" alt="" srcset=""> </div>
-        <div class="obstacle red square3"><img src="image/MonstreRouge.png" alt="" srcset=""></div>
-        <div class="obstacle red square4"><img src="image/MonstreRouge.png" alt="" srcset=""></div>
-        <div class="obstacle red square5"><img src="image/MonstreRouge.png" alt="" srcset=""></div>
-        <div class="obstacle red square6"><img src="image/MonstreRouge.png" alt="" srcset=""></div>
+        <div class="obstacle red square2 mechant"><img id="imagePorteRouge" src="image/porteRouge.png" alt="" srcset=""> </div>
+        <div class="obstacle red square3 mechant"><img src="image/MonstreRouge.png" alt="" srcset=""></div>
+        <div class="obstacle red square4 mechant"><img src="image/MonstreRouge.png" alt="" srcset=""></div>
+        <div class="obstacle red square5 mechant"><img src="image/MonstreRouge.png" alt="" srcset=""></div>
+        <div class="obstacle red square6 mechant"><img src="image/MonstreRouge.png" alt="" srcset=""></div>
 
 
 
