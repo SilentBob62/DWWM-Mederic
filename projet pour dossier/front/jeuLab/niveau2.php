@@ -42,12 +42,12 @@ echo '<body id="niveau2">
         <div class="obstacle black line37">&nbsp;</div>
 
 
-        <div class="obstacle blue square20"><img src="image/MonstreBleu.png" alt=""></div>
+        <div class="obstacle blue square20"><img src="image/MonstreBleuPasContent.png" alt=""></div>
         <div class="obstacle blue square21"><img src="image/MonstreBleu.png" alt=""></div>
-        <div class="obstacle blue square22"><img src="image/MonstreBleu.png" alt=""></div>
+        <div class="obstacle blue square22"><img src="image/MonstreBleuPasContent.png" alt=""></div>
         <div class="obstacle blue square23"><img src="image/MonstreBleu.png" alt=""></div>
         <div class="obstacle blue square24"><img src="image/MonstreBleu.png" alt=""></div>
-        <div class="obstacle blue square25"><img src="image/MonstreBleu.png" alt=""></div>
+        <div class="obstacle blue square25"><img src="image/MonstreBleuPasContent.png" alt=""></div>
 
 
         <div class="obstacle blueFonce2"></div>

@@ -315,6 +315,102 @@ function limit(top, left, width) {
     }
     return true;
 }
+//===>
+function moveHorizontal()
+{
+    body=document.getElementsByTagName("body")[0];
+    if(body.id=="niveau2")
+    {
+        blue=document.getElementsByClassName("blue")[0];
+        blue2=document.getElementsByClassName("blue")[2];
+        blue5=document.getElementsByClassName("blue")[5];
+        var styleBlue = window.getComputedStyle(blue, null);
+        var styleBlue2 = window.getComputedStyle(blue2, null);
+        var styleBlue5 = window.getComputedStyle(blue5, null);
+        var pE = parseInt(styleBlue.left);
+        var pE2 = parseInt(styleBlue2.left);
+        var pE5 = parseInt(styleBlue5.top);
+        line21=document.getElementsByClassName("line21")[0];
+        var styleLine21 = window.getComputedStyle(line21, null);
+        var l21L=parseInt(styleLine21.left);
+        var l21W=parseInt(styleLine21.width);
+        var l21Left=l21W+l21L;
+        line27=document.getElementsByClassName("line27")[0];
+        var styleLine27 = window.getComputedStyle(line27, null);
+        var l27L=parseInt(styleLine27.left);
+        var l27W=parseInt(styleLine27.width);
+        line26=document.getElementsByClassName("line26")[0];
+        var styleLine26 = window.getComputedStyle(line26, null);
+        var l26L=parseInt(styleLine26.left);
+        var l26W=parseInt(styleLine26.width);
+        var l26Left=l26W+l26L;
+        line23=document.getElementsByClassName("line23")[0];
+        var styleLine23 = window.getComputedStyle(line23, null);
+        var l23L=parseInt(styleLine23.left);
+        var l23W=parseInt(styleLine23.width);
+        line22=document.getElementsByClassName("line22")[0];
+        var styleLine22 = window.getComputedStyle(line22, null);
+        var l22T=parseInt(styleLine22.top);
+        var l22H=parseInt(styleLine22.height);
+        // var l26Left=l26W+l26L;
+        line37=document.getElementsByClassName("line37")[0];
+        var styleLine37 = window.getComputedStyle(line37, null);
+        var l37T=parseInt(styleLine37.top);
+        var l37H=parseInt(styleLine37.height);
+        if (pE>l21Left+5) 
+        {
+            blue.style.left = pE - 10+ "px";
+        }
+        else if (pE<=(l21Left+10))
+            a=0;
+        if (a==0)
+        {
+            if (pE<(l27L-5-l27W)) 
+            {
+                blue.style.left = pE + 10+ "px";
+            }
+            else if (pE>=(l27L-10-l27W))
+                a=1;
+        }
+        
+
+        if (pE2>l26Left+5) 
+        {
+            blue2.style.left = pE2 - 10+ "px";
+        }
+        else if (pE2<=(l26Left+10))
+            b=0;
+        if (b==0)
+        {
+            if (pE2<(l23L-l26W-l23W-5)) 
+            {
+                blue2.style.left = pE2 + 10+ "px";
+            }
+            else if (pE2>=(l23L-l26W-l23W-10))
+            b=1;
+        }
+///********************************** */
+        if (pE5>(l37T+10+l37H)) 
+        {
+            blue5.style.top = pE5 - 10+ "px";
+        }
+        else if (pE5<l37T+20+l37H)
+            c=0;
+        if (c==0)
+        {
+            if (pE5<l22T-l22H-l37H) 
+            {
+                blue5.style.top = pE5 + 10+ "px";
+            }
+            else if (pE5=l22T-l22H-l37H)
+                c=1;
+        }
+    }
+}
+
+setInterval(moveHorizontal, 50) 
+
+
 
 // ===>  gestion des touches du clavier
 
@@ -336,6 +432,7 @@ document.addEventListener('keydown', function (event) {
             document.getElementById("droite").style.left="0.25vw";
             document.getElementById("gauche").style.top="0";
             document.getElementById("droite").style.top="0";
+            document.getElementsByClassName("blue")[0].style.left;
             break;
         case 39: // droite(102)
             move(speed, 0);
@@ -350,7 +447,38 @@ document.addEventListener('keydown', function (event) {
             document.getElementById("droite").style.left="0.25vw";
             document.getElementById("gauche").style.top="0.6vw";
             document.getElementById("droite").style.top="0.6vw";
+            document.getElementsByClassName("blue")[0].style.left;
             break;
+        // case 32:
+        //     body=document.getElementsByTagName("body")[0];
+        //     if(body.id=="niveau2")
+        //     {
+        //         blue=document.getElementsByClassName("blue")[0];
+        //         var styleBlue = window.getComputedStyle(blue, null);
+        //         var pE = parseInt(styleBlue.left);
+        //         if (pE>83) 
+        //         {
+        //             blue.style.left = pE - 10+ "px";
+        //         }
+        //         else
+        //             blue.style.left = pE + 10+ "px";
+        //     }
+        //     break;
+            // case 17:
+            //     body=document.getElementsByTagName("body")[0];
+            //     if(body.id=="niveau2")
+            //     {
+            //         blue=document.getElementsByClassName("blue")[0];
+            //         var styleBlue = window.getComputedStyle(blue, null);
+            //         var pE = parseInt(styleBlue.left);
+            //         if (pE<283) 
+            //         {
+            //             blue.style.left = pE + 10+ "px";
+            //         }
+            //         else
+            //             blue.style.left = pE - 10+ "px";
+            //     }
+            //     break;
         // case 103: // haut gauche
         //     move(-speed, -speed);
         //     break;
@@ -366,9 +494,24 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
-blockRouge = document.getElementsByClassName("red");
+
+body=document.getElementsByTagName("body")[0];
+    if(body.id=="niveau1")
+    {
+        blockRouge = document.getElementsByClassName("red");
+        if(blockRouge!= 'undefined')
+        for (i = 1; i < 6; i++) {
+        blockRouge[i].style.display = "none";
+        }
+    }
+    // else if (body.id=="niveau2")
+    // {
+    //     blockBlue = document.getElementsByClassName("blue");
+    //     for(i=0;i<6;i++)
+    //     {
+    //         blockBlue[i].style.left=parseInt(blockBlue[i].style.left)+5+"px";
+    //     }
+    // }
 
 
-for (i = 1; i < 6; i++) {
-    blockRouge[i].style.display = "none";
-}
+
