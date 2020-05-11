@@ -13,7 +13,10 @@ class hellowidget extends WP_Widget
         echo apply_filters('widget_title', $instance['title']);
         echo $args['after_title'];
     // corps du widget
-            ?>
+    $couleur = get_option('helloworld_couleur', 'white');
+    ?>
+    <div id="test" style="color:<?php echo $couleur;?>">Hello World est un plug-in qui enregistre les commentaires en base de données</div>
+        
     <h1 class="principal">Salut tout le monde!!</h1>
     <!-- <h2 class="secondaire">salut docteur Nick</h2>
     <li>un</li>
