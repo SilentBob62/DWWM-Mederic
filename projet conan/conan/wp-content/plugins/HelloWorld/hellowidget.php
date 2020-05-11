@@ -17,6 +17,9 @@ echo $args['after_title'];
 ?>
 <h1 class="principal">Salut tout le monde!!</h1>
 <h2 class="secondaire">salut docteur Nick</h2>
+<li>un</li>
+<li>deux</li>
+<li>trois</li>
 <?php
 echo $args['after_widget'];
 }
