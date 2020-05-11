@@ -28,6 +28,9 @@ class HelloWorld_Plugin
         <label>Couleur</label>
         <input type="text" name="helloworld_couleur" value="<?php echo
                 get_option("helloworld_couleur") ?>"/>
+        <label>taille</label>
+        <input type="text" name="helloworld_size" value="<?php echo
+                get_option("helloworld_size") ?>"/>
         <?php submit_button();?>
         <?php settings_fields('helloworld_settings') ?>
         </form>
