@@ -16,7 +16,7 @@ class nouveauPluginwidget extends WP_Widget
         $couleur = get_option('nouveauPlugin_couleur', 'white');
         $taille = get_option('nouveauPlugin_taille', '1em');
         ?>
-        <div id="test" style="color:<?php echo $couleur?>; font-size:<?php echo $taille ?>">salut tout le monde</div>
+        <div id="test" style="color:<?php echo $couleur?>; font-size:<?php echo $taille ?>">Qu'est ce que tu as?</div>
         <form action="" method="post">
         <p>
         <label for="nouveauPlugin_comm" style="color:<?php echo $couleur2?>; font-size:<?php echo $taille2 ?>">commentaire :</label>
