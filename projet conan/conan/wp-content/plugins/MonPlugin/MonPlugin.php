@@ -28,7 +28,7 @@ class MonPlugin_plugin
         <h1 style="color:blue; font-weight: bolder;">Style</h1>
         <!-- <?php        ?>  -->
       
-        <form class="blackTransparent" style="border:black 2px solid; border-radius: 10px; padding:1vw;width:50vw" method="post" action="options.php">
+        <form class="blackTransparent" style="border:black 2px solid;  background-color: rgba(0, 0, 0, 0.5); border-radius: 10px; padding:1vw;width:50vw" method="post" action="options.php">
         <p>
             <legend style="font-weight: bolder;color:rgb(114, 17, 17)">Titre</legend>
         <label style="font-weight: bolder">Couleur</label>
