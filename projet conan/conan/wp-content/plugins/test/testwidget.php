@@ -42,7 +42,7 @@ class testwidget extends WP_Widget
                         echo($comm);
                     }
                     else
-                    echo '<p style="font-weight:bolder">'.($comm)." ===> "."\t";
+                    echo '<p style="font-weight:bolder">'.($comm)." propose "."\t";
                     $i++;
                 }
                 
