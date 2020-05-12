@@ -40,4 +40,9 @@ class testClass
             }
         }
     }
+    public function suppr_ideeAmelioration($obj)
+    {
+        global $wpdb;
+        $wpdb->exec("DELETE FROM {$wpdb->prefix}test_idee WHERE {$wpdb->prefix}test_idee.id=" . $obj->getId());
+    }
 }

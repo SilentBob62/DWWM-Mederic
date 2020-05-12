@@ -15,17 +15,41 @@ class testwidget extends WP_Widget
         echo $args['after_title'];
         // corps du widget
         ?>
+        <div class="formule">
         <form action="" method="post">
+            <h3 class="ecritureBlanche">Proposition d'Amélioration</h3>
             <p>
-                <label for="test_nouvelleIdee">Votre idée Amelioration :</label>
-                <input id="test_nouvelleIdee" name="test_nouvelleIdee" type="texte"/>
+                <label class="ecritureBlanche" for="test_pseudo">Votre pseudo :</label>
+                <input id="test_pseudo" name="test_pseudo" type="texte"/>
             </p>
             <p>
-                <label for="test_pseudo">Votre pseudo :</label>
-                <input id="test_pseudo" name="test_pseudo" type="texte"/>
+                <label class="ecritureBlanche" for="test_nouvelleIdee">Votre idée Amelioration :</label>
+                <input id="test_nouvelleIdee" name="test_nouvelleIdee" type="texte"/>
             </p>
             <input type="submit"/>
         </form>
+        <div class="commantaire">
+            <?php
+            global $wpdb;
+        
+            $infos=($wpdb->get_results("SELECT pseudo, ideeAmelioration FROM {$wpdb->prefix}test_idee")); 
+            foreach($infos as $info)
+            {
+                $i=0;
+                foreach($info as $comm)
+                {
+                    if ($i==1){
+                        echo($comm);
+                    }
+                    else
+                    echo '<p style="font-weight:bolder">'.($comm)." ===> "."\t";
+                    $i++;
+                }
+                
+            }
+            ?>
+        </div>
+        </div>
         <?php
         echo $args['after_widget'];
     }

@@ -41,7 +41,7 @@ class test_Plugin
                 echo($comm);
             }
             else
-            echo '<p style="font-weight:bolder">'.($comm)." : "."\t";
+            echo '<p style="font-weight:bolder">'.($comm)." propose "."\t";
             $i++;
         }
         

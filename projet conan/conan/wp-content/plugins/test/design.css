@@ -1,0 +1,9 @@
+.formule{
+border: 2px solid red;
+border-radius: 10px;
+background-color: rgba(190, 42, 42, 0.5);
+padding: 1vw;
+}
+.ecritureBlanche{
+    color: white;
+}
