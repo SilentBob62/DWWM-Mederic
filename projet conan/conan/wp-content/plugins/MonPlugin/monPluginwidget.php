@@ -26,7 +26,7 @@ class monPluginwidget extends WP_Widget
         <label for="monPlugin_comm" style="color:<?php echo $couleur2?>; font-size:<?php echo $taille2 ?>">commentaire :</label>
         <input style="color:<?php echo $couleurEcriture?>;background-color:<?php echo $couleurFond?>; " id="monPlugin_comm" name="monPlugin_comm" type="texte"/>
         <label for="pseudo" style="color:<?php echo $couleur2?>; font-size:<?php echo $taille2 ?>">pseudo :</label>
-        <input style="color:<?php echo $couleurEcriture?>;;background-color:<?php echo $couleurFond?>;" id="pseudo" name="pseudo" type="texte"/>
+        <input style="color:<?php echo $couleurEcriture?>;background-color:<?php echo $couleurFond?>;" id="pseudo" name="pseudo" type="texte"/>
         </p>
         <input type="submit"/>
         </form>

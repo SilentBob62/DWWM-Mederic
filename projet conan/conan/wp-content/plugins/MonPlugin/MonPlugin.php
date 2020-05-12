@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Mon Plugin
-Description:
+Description: commentaire sur salut tout le monde
 Author: Moi
 Version: 1.0
  */
@@ -53,7 +53,7 @@ class MonPlugin_plugin
         <?php submit_button();?>
         <?php settings_fields('monPlugin_settings') ?>
         </form>
-        <h2 style="color:red">listes des commentaires :</h2> 
+        <h2 style="color:red">liste des commentaires :</h2> 
         <?php
        
 
@@ -69,12 +69,12 @@ class MonPlugin_plugin
                     echo($comm);
                 }
                 else
-                echo '<p style="font-weight:bolder">'.($comm)." : "."\t";
+                echo '<p style="font-weight:bolder ;border:2px solid red; width:20vw">'.($comm)." : "."\t";
                 $i++;
             }
             
         }
 
-}
+    }
 }
 new MonPlugin_plugin();
