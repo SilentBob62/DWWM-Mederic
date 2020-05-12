@@ -77,3 +77,6 @@ img{
 .titreInfo{
 	color:white;
 }
+.blackTransparent{
+	background-color: rgba(0, 0, 0, 0.5);
+}

@@ -17,7 +17,7 @@ class testwidget extends WP_Widget
         ?>
         <div class="formule">
         <form action="" method="post">
-            <h3 class="ecritureBlanche">Proposition d'Amélioration</h3>
+            <h3 class="ecritureBlanche">Proposition d'Amélioration du site</h3>
             <p>
                 <label class="ecritureBlanche" for="test_pseudo">Votre pseudo :</label>
                 <input id="test_pseudo" name="test_pseudo" type="texte"/>
@@ -28,30 +28,43 @@ class testwidget extends WP_Widget
             </p>
             <input type="submit"/>
         </form>
-        <div class="commantaire">
-            <?php
+        <div class="commantaire">     
+        <?php 
+        for($a=0;$a<2;$a++)
+        {
+            if($a==0)echo'<div class="dernierCommentaire"><h3 class="ecritureBlanche">La dernière idée : </h3></div>';
+            else echo'<div class="dernierCommentaire"><h3 class="ecritureBlanche">Avant dernière idée : </h3></div>';
             global $wpdb;
-        
-            $infos=($wpdb->get_results("SELECT pseudo, ideeAmelioration FROM {$wpdb->prefix}test_idee")); 
-            foreach($infos as $info)
+            //recupere le dernier id
+            $id= $wpdb->get_row("SELECT MAX(id)-$a FROM {$wpdb->prefix}test_idee");
+
+            foreach($id as $unite)
             {
-                $i=0;
-                foreach($info as $comm)
+                $unite;
+            }
+            // recupere le dernier commentaire et le dernier pseudo
+            $row = $wpdb->get_row("SELECT pseudo, ideeAmelioration FROM {$wpdb->prefix}test_idee WHERE id = $unite");
+            $i=0;
+            // ecrit le dernier commentaire
+            foreach($row as $unite)
+            {
+                if($i==0)
                 {
-                    if ($i==1){
-                        echo($comm);
-                    }
-                    else
-                    echo '<p style="font-weight:bolder">'.($comm)." propose "."\t";
+                    echo '<p style="font-weight:bolder">'.$unite." a proposer de ".'"';
                     $i++;
                 }
-                
+                else
+                {
+                    echo $unite.'"';
+                }
             }
-            ?>
-        </div>
-        </div>
-        <?php
-        echo $args['after_widget'];
+            
+        }
+        ?>
+                </div>
+            </div>
+            <?php
+            echo $args['after_widget'];
     }
     public function form($instance)
     // formulaire de gestion des paramètres pour le module d'administration
