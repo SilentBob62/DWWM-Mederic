@@ -28,6 +28,7 @@ class testwidget extends WP_Widget
             </p>
             <input type="submit"/>
         </form>
+        <p></p>
         <div class="commantaire">     
         <?php 
         for($a=0;$a<2;$a++)
