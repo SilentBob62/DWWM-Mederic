@@ -31,7 +31,7 @@ class monPluginwidget extends WP_Widget
         <input type="submit"/>
         </form>
         <?php
-echo $args['after_widget'];
+        echo $args['after_widget'];
     }
     public function form($instance)
     // formulaire de gestion des paramètres pour le module d'administration
