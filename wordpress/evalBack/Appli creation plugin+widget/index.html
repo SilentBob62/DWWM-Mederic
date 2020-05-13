@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="generate.css">
+</head>
+
+<body>
+    <header class="black borderBottom">
+        <div class="logo">
+            <img src="" alt="">
+        </div>
+        <div class="titre vert">
+            <h1>Generateur Plugin et widget</h1>
+        </div>
+    </header>
+    <div class="content">
+        <div id="contenu" class="contenu">
+            <form method="POST" action="generate(Plugin+widget).php">
+                <div id="formulaire" class="formulaire blackTransparent border">
+                    <div class="donnee">
+                        <label class="vert" for="projet">Projet</label>
+                        <input id="projet" name="projet" type="text" value="">
+                        <div class="message"></div>
+                    </div>
+                    <div class="donnee">
+                        <label class="vert" for="nomPlugin">nomPlugin</label>
+                        <input id="nomPlugin" name="nomPlugin" type="text">
+                        <div class="message"></div>
+                    </div>
+                    <div class="donnee">
+                        <label class="vert" for="nomChangementPlugin">type de changement</label>
+                        <input id="nomChangementPlugin" name="nomChangementPlugin" type="text">
+                        <div class="message"></div>
+                    </div>
+                    <div class="donnee">
+                        <label class="vert" for="base1">valeur de base</label>
+                        <input id="base1" name="base1" type="text">
+                        <div class="message"></div>
+                    </div>
+                    <div class="donnee">
+                        <label class="vert" for="nomChangementPlugin2">type de changement</label>
+                        <input id="nomChangementPlugin2" name="nomChangementPlugin2" type="text">
+                        <div class="message"></div>
+                    </div>
+                    <div class="donnee">
+                        <label class="vert" for="base2">valeur de base</label>
+                        <input id="base2" name="base2" type="text">
+                        <div class="message"></div>
+                    </div>
+                    <div class="donnee">
+                        <label class="vert" for="nomTable">nom de la table</label>
+                        <input id="nomTable" name="nomTable" type="text">
+                        <div class="message"></div>
+                    </div>
+                    <div class="donnee">
+                        <label class="vert" for="description">description du plugin</label>
+                        <input id="description" name="description" type="text">
+                        <div class="message"></div>
+                    </div>
+                    <div class="donnee">
+                        <label class="vert" for="titreWidget">nom du widget</label>
+                        <input id="titreWidget" name="titreWidget" type="text">
+                        <div class="message"></div>
+                    </div>
+                    <div class="bas">
+                        <div class="espace"></div>
+                        <div class="bouton">
+                            <input class="button" type="submit" value="OK">
+                        </div>
+                        <div class="espace"></div>
+                    </div>
+                </div>
+            </form>
+            <script src="generate.js"></script>
+        </div>
+    </div>
+    <footer>
+        <div class="piedDePage black borderTop">
+            <div class="logo"></div>
+            <div class="signature vert">Realisé par SilentB0B</div>
+        </div>
+    </footer>
+</body>
+
+</html>
